@@ -319,8 +319,9 @@ nav ul li a {
 }
 
 .year-1925 {
-    background-color: #0f0d0b;
-    border: 3px solid #0f0d0b;;
+    background-color: #eeca4b;
+    border: 3px solid #0f0d0b;
+    color: #0f0d0b;
 }
 
 .year-1931 {
@@ -692,4 +693,164 @@ footer p {
     color: #0f0d0b;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+}
+
+/* Estilos para la página de Historia */
+.historia-hero {
+    background-image: url('../imagenes/hero-historia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.historia-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.historia-hero-content {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.historia-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+}
+
+.historia-hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.historia-contenido {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    padding: 0 32px;
+}
+
+.historia-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.historia-columna {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.historia-columna h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0f0d0b;
+    margin: 0 0 20px 0;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.historia-columna p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.legado-movimiento {
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    padding: 0 32px;
+}
+
+.legado-movimiento h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0f0d0b;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.legado-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.legado-tarjeta {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.legado-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.legado-imagen {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.legado-imagen .material-icons {
+    font-size: 4rem;
+    color: #666;
+}
+
+.legado-tarjeta p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive Design para Historia */
+@media (max-width: 768px) {
+    .historia-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .historia-hero p {
+        font-size: 1.2rem;
+    }
+    
+    .historia-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .legado-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .legado-movimiento h2 {
+        font-size: 2rem;
+    }
 }
