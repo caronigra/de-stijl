@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>De Stijl</title>
+    <link rel="icon" href="imagenes/logo-icon.svg" type="icon">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagenes/logo.svg" alt="logo-de-stijl">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="filosofia.html">Filosofía</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedor-principal">
+            <!-- Cuadrado de texto -->
+            <div class="cuadrado-texto">
+                <h1>Neoplasticismo</h1>
+                <h2>El estilo Universal</h2>
+                <p>Descubre cómo esta vanguardia holandesa transformó para siempre nuestra forma de entender el arte y
+                    el diseño.</p>
+                <button class="btn-explorar">Explorar Movimiento</button>
+            </div>
+
+            <!-- Cuadrado dividido en 4 -->
+            <div class="cuadrado-colores">
+                <div class="cuadrado1">
+                    <p class="text1home">1917 - 1931<br>(14 años de duración)</p>
+                </div>
+                <div class="cuadrado2"></div>
+                <div class="cuadrado3"></div>
+                <div class="cuadrado4">
+                    <p class="text2home">“El artista verdaderamente moderno es consciente de la abstracción en una
+                        emoción de belleza”<br> <br> PIET MONDRIAN</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="title-home-h3">Línea de Tiempo</h3>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-events">
+                    <div class="event">
+                        <div class="event-top">
+                            <div class="event-top-text"></div> <!-- Vacío -->
+                        </div>
+                        <div class="year-box year-1917">1917</div>
+                        <div class="event-bottom">
+                            <div class="event-bottom-text">Fundación de la revista De Stijl</div> <!-- Movido aquí -->
+                        </div>
+                    </div>
+                    <div class="event">
+                        <div class="event-top">
+                            <div class="event-top-text">Manifiesto del Neoplasticismo</div>
+                        </div>
+                        <div class="year-box year-1920">1920</div>
+                        <div class="event-bottom">
+                            <div class="event-bottom-text"></div>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-top">
+                            <div class="event-top-text"></div>
+                        </div>
+                        <div class="year-box year-1921">1921</div>
+                        <div class="event-bottom">
+                            <div class="event-bottom-text">Primeras obras completamente abstractas</div>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-top">
+                            <div class="event-top-text">Casa Rietveld Schröder</div>
+                        </div>
+                        <div class="year-box year-1924">1924</div>
+                        <div class="event-bottom">
+                            <div class="event-bottom-text"></div>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-top">
+                            <div class="event-top-text"></div>
+                        </div>
+                        <div class="year-box year-1925">1925</div>
+                        <div class="event-bottom">
+                            <div class="event-bottom-text">Ruptura entre Mondrian y van Doesburg</div>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="event-top">
+                            <div class="event-top-text">Fin de la revista De Stijl</div>
+                        </div>
+                        <div class="year-box year-1931">1931</div>
+                        <div class="event-bottom">
+                            <div class="event-bottom-text"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="title-home-h3">Explora De Stijl</h3>
+        <div class="container">
+            <!-- Tarjeta 1 - Artistas -->
+            <div class="card card-artistas" onclick="verArtistas()">
+                <div class="card-image">
+                    <img src="imagenes/home/card-1.jpg" alt="Artista">
+                </div>
+                <div class="card-footer">
+                    <span class="texto-subrayado">Ver Artistas</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 - Obras -->
+            <div class="card card-obras" onclick="verObras()">
+                <div class="card-image">
+                    <img src="imagenes/home/card-2.png" alt="Obras">
+                </div>
+                <div class="card-footer">
+                    <span class="texto-subrayado">Ver Obras</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 - Filosofía -->
+            <div class="card card-filosofia" onclick="verFilosofia()">
+                <div class="card-image">
+                    <img src="imagenes/home/card-3.png" alt="Filosofía">
+                </div>
+                <div class="card-footer">
+                    <span class="texto-subrayado">Ver Filosofía</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </div>
+            </div>
+            <div class="container-principios">
+        <h3 class="title-home-h3-pf">Principios fundamentales</h3>
+        <div class="container-pf">
+            <div class="principle-item colores-primarios" onclick="verColoresPrimarios()">
+                <div class="image-box">
+                    <img src="imagenes/home/principio-color.svg" alt="Colores Primarios" class="principle-image">
+                </div>
+                <div class="principle-title">
+                    COLORES<br>PRIMARIOS
+                </div>
+            </div>
+
+            <div class="principle-item formas-geometricas" onclick="verFormasGeometricas()">
+                <div class="image-box">
+                    <img src="imagenes/home/principio-geometria.svg" alt="Formas Geométricas" class="principle-image">
+                </div>
+                <div class="principle-title">
+                    FORMAS<br>GEOMÉTRICAS
+                </div>
+            </div>
+
+            <div class="principle-item equilibrio-matematico" onclick="verEquilibrioMatematico()">
+                <div class="image-box">
+                    <img src="imagenes/home/principio-simetria.svg" alt="Equilibrio Matemático" class="principle-image">
+                </div>
+                <div class="principle-title">
+                    EQUILIBRIO<br>MATEMÁTICO
+                </div>
+            </div>
+
+            <div class="principle-item expresion-universal" onclick="verExpresionUniversal()">
+                <div class="image-box">
+                    <img src="imagenes/home/principio-universal.svg" alt="Expresión Universal" class="principle-image">
+                </div>
+                <div class="principle-title">
+                    EXPRESIÓN<br>UNIVERSAL
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    </main>
+    <footer>
+        <div id="logo">
+            <img src="imagenes/logo.svg" alt="logo-de-stijl">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="filosofia.html">Filosofía</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <p>Copyright © 2025 | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
