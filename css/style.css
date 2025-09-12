@@ -473,7 +473,9 @@ nav ul li a {
 .container-principios {
     background-color: #182c6d;
     width: 100vw;
-    
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 40px 0;
 }
 .container-pf{
     display: grid;
@@ -481,7 +483,8 @@ nav ul li a {
     gap: 40px;
     max-width: 1200px;
     width: 100%;
-
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .principle-item {
     display: flex;
