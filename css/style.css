@@ -45,10 +45,8 @@ nav ul li a {
 .contenedor-principal {
     display: flex;
     flex-direction: row;
-    gap: 8px;
-    /* Sin gap para que se vean unidos */
-    margin-top: 32px;
-    margin-right: 32px;
+    gap: 10px;
+    margin: 32px;
 }
 
 /* Cuadrado de texto */
@@ -112,7 +110,7 @@ nav ul li a {
     grid-template-rows: 1fr 1fr;
     flex: 1;
     /* Mismo ancho que cuadrado-texto */
-    gap: 0;
+    gap: 10px;
 }
 
 /* Subcuadrados - estilos base */
@@ -141,22 +139,18 @@ nav ul li a {
 }
 
 .cuadrado2 {
-    background-color: #0f0d0b;
+    background-color: #dfe1e6;
     border: 3px solid #0f0d0b;
-    border-left: none;
 }
 
 .cuadrado3 {
     background-color: #182c6d;
     border: 3px solid #0f0d0b;
-    border-top: none;
 }
 
 .cuadrado4 {
     background-color: #eeca4b;
     border: 3px solid #0f0d0b;
-    border-left: none;
-    border-top: none;
 }
 
 .text2home {
@@ -198,6 +192,11 @@ nav ul li a {
 }
 
 /* Estilos para la línea de tiempo */
+
+.contenedor-linea-tiempo{
+    background-color: #dfdfdf;
+    padding-bottom: 42px;
+}
 
 .title-home-h3 {
     font-family: 'Orbitron', sans-serif;
@@ -297,29 +296,36 @@ nav ul li a {
 
 /* Colores específicos para cada año */
 .year-1917 {
-    background-color: #ce350c;
+    background-color: #eeca4b;
+    color: #0f0d0b;
+    border: 3px solid #0f0d0b;;
 }
 
 .year-1920 {
-    background-color: #0f0d0b;
+    background-color: #182c6d;
+    border: 3px solid #0f0d0b;;
 }
 
 .year-1921 {
-    background-color: #dfe1e6;
-    color: #0f0d0b;
+    background-color: #ce350c;
+    color: white;
+    border: 3px solid #0f0d0b;;
 }
 
 .year-1924 {
-    background-color: #eeca4b;
+    background-color: white;
     color: #0f0d0b;
+    border: 3px solid #0f0d0b;;
 }
 
 .year-1925 {
     background-color: #0f0d0b;
+    border: 3px solid #0f0d0b;;
 }
 
 .year-1931 {
     background-color: #182c6d;
+    border: 3px solid #0f0d0b;;
 }
 
 /* Responsive linea de tiempo*/
@@ -375,7 +381,6 @@ nav ul li a {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     border: 3px solid black !important;
     border-radius: 0px !important;
@@ -475,6 +480,7 @@ nav ul li a {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
+    margin-top: 80px;
     padding: 40px 0;
 }
 .container-pf{
@@ -484,7 +490,7 @@ nav ul li a {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding:20px;
 }
 .principle-item {
     display: flex;
@@ -502,7 +508,6 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -522,15 +527,15 @@ nav ul li a {
 }
 
 .colores-primarios .bar:nth-child(1) {
-    background: #1e3c72;
+    background: #182c6d;
 }
 
 .colores-primarios .bar:nth-child(2) {
-    background: #e74c3c;
+    background: #CE350C;
 }
 
 .colores-primarios .bar:nth-child(3) {
-    background: #f39c12;
+    background: #eeca4b;
 }
 
 .formas-geometricas .squares {
@@ -551,11 +556,11 @@ nav ul li a {
 }
 
 .formas-geometricas .square:nth-child(2) {
-    background: #1e3c72;
+    background: #182c6d;
 }
 
 .formas-geometricas .square:nth-child(3) {
-    background: #e74c3c;
+    background: #ce350c;
 }
 
 .formas-geometricas .square:nth-child(4) {
@@ -564,7 +569,7 @@ nav ul li a {
 }
 
 .equilibrio-matematico .math-icon {
-    background: #e74c3c;
+    background: #ce350c;
     color: white;
     width: 80px;
     height: 80px;
@@ -602,7 +607,7 @@ nav ul li a {
 .expresion-universal .rect:nth-child(3) {
     width: 25px;
     height: 60px;
-    background: #f39c12;
+    background: #eeca4b;
     margin-top: 20px;
 }
 
@@ -658,7 +663,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    border-top: 3px solid #0f0d0b;
     background-color: #fff;
 }
 
