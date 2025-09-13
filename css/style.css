@@ -750,9 +750,22 @@ footer p {
 }
 
 .content-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 40px;
+}
+
+.content-row {
+    display: flex;
+    gap: 40px;
+}
+
+.content-row .content-column.full-width {
+    flex: 1;
+}
+
+.content-row .content-column:not(.full-width) {
+    flex: 1;
 }
 
 .content-column {
