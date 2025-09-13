@@ -716,18 +716,19 @@ footer p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #0f0d0b;
+    opacity: 0.5;
 }
 
 .hero-content {
     text-align: center;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     position: relative;
     z-index: 2;
 }
 
 .hero-content h1 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 4rem;
     font-weight: 700;
     margin: 0 0 20px 0;
@@ -735,10 +736,11 @@ footer p {
 }
 
 .hero-content p {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #historia-content {
