@@ -696,6 +696,7 @@ footer p {
     font-size: 14px;
 }
 
+
 /* Estilos para la página de Historia */
 #hero {
     background-image: url(../imagenes/historia/bg-hero.jpg);
@@ -870,16 +871,16 @@ footer p {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero-content p {
         font-size: 1.2rem;
     }
-    
+
     .content-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .legacy-container {
         flex-direction: column;
         gap: 24px;
@@ -903,7 +904,7 @@ footer p {
     .legacy-card p {
         padding: 20px;
     }
-    
+
     #legado h2 {
         font-size: 2rem;
     }
