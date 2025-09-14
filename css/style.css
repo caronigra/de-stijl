@@ -665,6 +665,7 @@ footer {
     align-items: center;
     padding: 40px 20px;
     background-color: #fff;
+    border-top: #cecece 0.5px solid;
 }
 
 footer #logo {
@@ -826,6 +827,11 @@ footer p {
 
 .legacy-column-left .legacy-card:nth-child(2) {
     flex-grow: 1;
+    background-color: #ce350c;
+}
+
+.legacy-column-left .legacy-card:nth-child(2) p {
+    color: #fff;
 }
 
 .legacy-column-left .legacy-card:nth-child(1) {
@@ -834,6 +840,11 @@ footer p {
 
 .legacy-column-right .legacy-card:nth-child(1) {
     flex-grow: 1;
+    background-color: #182c6d;
+}
+
+.legacy-column-right .legacy-card:nth-child(1) p {
+    color: #fff;
 }
 
 .legacy-column-right .legacy-card:nth-child(2) {
