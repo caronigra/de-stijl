@@ -807,6 +807,7 @@ footer p {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
+    align-items: stretch;
 }
 
 .legacy-column-left,
@@ -824,20 +825,19 @@ footer p {
 }
 
 .legacy-column-left .legacy-card:nth-child(2) {
-    height: fit-content;
+    flex-grow: 1;
 }
 
 .legacy-column-left .legacy-card:nth-child(1) {
     height: auto;
-    min-height: 320px;
 }
 
 .legacy-column-right .legacy-card:nth-child(1) {
-    height: fit-content;
+    flex-grow: 1;
 }
 
 .legacy-column-right .legacy-card:nth-child(2) {
-    min-height: 420px;
+    height: auto;
 }
 
 
