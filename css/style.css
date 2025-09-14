@@ -909,3 +909,425 @@ footer p {
         font-size: 2rem;
     }
 }
+
+/* Estilos específicos para la página de Artistas */
+
+/* Perfiles de Artistas */
+#perfiles-artistas {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+#perfiles-artistas .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.artista-perfil {
+    background: white;
+    border: 3px solid #0f0d0b;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.artista-header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.artista-avatar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #0f0d0b;
+}
+
+.artista-info h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+}
+
+.periodo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.artista-biografia h3,
+.evolucion-artista h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.artista-biografia p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.obras-destacadas {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.obra h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 20px 0;
+    letter-spacing: 1px;
+}
+
+.obra-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.obra-content img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #0f0d0b;
+    flex-shrink: 0;
+}
+
+.obra-descripcion p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Revista De Stijl */
+#revista-de-stijl {
+    background-color: #dfe1e6;
+    padding: 80px 0;
+}
+
+#revista-de-stijl .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.revista-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.revista-imagen img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border: 3px solid #0f0d0b;
+}
+
+.revista-info {
+    flex: 1;
+}
+
+.revista-info h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 30px 0;
+    letter-spacing: 2px;
+}
+
+.revista-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.revista-detalles {
+    background: white;
+    border: 3px solid #0f0d0b;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.revista-detalles h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.revista-detalles ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.revista-detalles li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 0 15px 0;
+    padding-left: 0;
+}
+
+.revista-detalles li strong {
+    color: #0f0d0b;
+    font-weight: 700;
+}
+
+/* Colaboraciones Destacadas */
+#colaboraciones {
+    background-color: white;
+    padding: 80px 0;
+}
+
+#colaboraciones .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+#colaboraciones h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    text-align: center;
+    margin: 0 0 60px 0;
+    letter-spacing: 2px;
+}
+
+.colaboraciones-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.colaboracion-card {
+    border: 3px solid #0f0d0b;
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.colaboracion-card:hover {
+    transform: translateY(-5px);
+}
+
+.colaboracion-imagen img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #0f0d0b;
+}
+
+.colaboracion-info {
+    padding: 30px;
+}
+
+.colaboracion-info h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+}
+
+.colaboracion-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Otros Artistas Destacados */
+#otros-artistas {
+    background-color: #182c6d;
+    padding: 80px 0;
+}
+
+#otros-artistas .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+#otros-artistas h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0 0 60px 0;
+    letter-spacing: 2px;
+}
+
+.artistas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.artista-card {
+    background: white;
+    border: 3px solid #0f0d0b;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.artista-card:hover {
+    transform: translateY(-5px);
+}
+
+.artista-imagen img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #0f0d0b;
+    margin-bottom: 15px;
+}
+
+.artista-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 5px 0;
+    letter-spacing: 1px;
+}
+
+.artista-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Responsive para página de Artistas */
+@media (max-width: 1024px) {
+    .colaboraciones-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .artistas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .artista-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .artista-avatar img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .artista-info h2 {
+        font-size: 2rem;
+    }
+
+    .obra-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .obra-content img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .revista-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .revista-imagen img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+
+    .revista-info h2 {
+        font-size: 2rem;
+    }
+
+    .colaboraciones-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .artistas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #perfiles-artistas .container {
+        padding: 0 20px;
+        gap: 60px;
+    }
+
+    .artista-perfil {
+        padding: 25px;
+    }
+
+    #colaboraciones h2,
+    #otros-artistas h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .artistas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artista-card {
+        padding: 15px;
+    }
+
+    .artista-imagen img {
+        height: 200px;
+    }
+}
