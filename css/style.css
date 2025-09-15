@@ -711,10 +711,7 @@ footer p {
     margin-bottom: 60px;
 }
 
-/* Imagen de fondo específica para la página de artistas */
-body.artistas #hero {
-    background-image: url(../imagenes/artistas/artista-1-mondrian.jpg);
-}
+
 
 #hero::before {
     content: '';
@@ -918,6 +915,12 @@ body.artistas #hero {
 /* Estilos específicos para la página de Artistas */
 
 /* Perfiles de Artistas */
+
+/* Imagen de fondo específica para la página de artistas */
+body.artistas #hero {
+    background-image: url(../imagenes/artistas/bg-artistas.jpg);
+}
+
 #perfiles-artistas {
     background-color: #f8f8f8;
     padding: 60px 0;
