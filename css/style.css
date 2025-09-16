@@ -1143,14 +1143,8 @@ body.artistas #hero {
 /* Revista De Stijl */
 #revista-de-stijl {
     background-color: #dfe1e6;
-    padding: 80px 0;
-    margin-top: 60px;
-}
-
-#revista-de-stijl .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
+    padding: 32px 0;
+    margin-top: 32px;
 }
 
 .revista-content {
@@ -1163,19 +1157,13 @@ body.artistas #hero {
     width: 400px;
     height: 500px;
     object-fit: cover;
-    border: 3px solid #0f0d0b;
-}
-
-.revista-info {
-    flex: 1;
 }
 
 .revista-info h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 900;
     color: #0f0d0b;
-    margin: 0 0 30px 0;
     letter-spacing: 2px;
 }
 
@@ -1184,45 +1172,8 @@ body.artistas #hero {
     font-size: 16px;
     line-height: 1.7;
     color: #0f0d0b;
-    margin: 0 0 20px 0;
 }
 
-.revista-detalles {
-    background: white;
-    border: 3px solid #0f0d0b;
-    padding: 30px;
-    margin-top: 30px;
-}
-
-.revista-detalles h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #0f0d0b;
-    margin: 0 0 20px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.revista-detalles ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.revista-detalles li {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    line-height: 1.6;
-    color: #0f0d0b;
-    margin: 0 0 15px 0;
-    padding-left: 0;
-}
-
-.revista-detalles li strong {
-    color: #0f0d0b;
-    font-weight: 700;
-}
 
 /* Colaboraciones Destacadas */
 #colaboraciones {
