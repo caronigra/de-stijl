@@ -423,6 +423,9 @@ nav ul li a {
     position: relative;
     border: 3px solid black !important;
     border-radius: 0px !important;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .card-image {
@@ -449,6 +452,11 @@ nav ul li a {
     font-size: 28px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-footer {
+    transform: scale(1.05);
 }
 
 .texto-subrayado {
