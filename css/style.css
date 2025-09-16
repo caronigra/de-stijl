@@ -931,7 +931,7 @@ body.artistas #hero {
 }
 
 .artista-perfil {
-    background: white;
+    background: #182c6d;
     border: 3px solid #0f0d0b;
     padding: 32px;
     display: flex;
@@ -943,6 +943,21 @@ body.artistas #hero {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+    position: relative;
+}
+
+.etiqueta-arte {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff0000;
+    color: white;
+    padding: 8px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: 2px solid #0f0d0b;
 }
 
 .artista-avatar {
@@ -967,7 +982,7 @@ body.artistas #hero {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 700;
-    color: #0f0d0b;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -979,8 +994,6 @@ body.artistas #hero {
 }
 
 .artista-biografia {
-    flex: 1;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -989,7 +1002,7 @@ body.artistas #hero {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    color: #0f0d0b;
+    color: white;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -997,7 +1010,6 @@ body.artistas #hero {
 .evolucion-artista {
     background-color: #dfe1e6;
     padding: 30px;
-    margin-top: 0;
     border: 3px solid #0f0d0b;
     width: 100%;
     box-sizing: border-box;
@@ -1016,8 +1028,16 @@ body.artistas #hero {
 .artista-biografia p {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    line-height: 1.5;
+    color: white;
+}
+
+.evolucion-artista p{
     line-height: 1.7;
     color: #0f0d0b;
+    font-weight: 400;
+    font-size: 16px;
+;
 }
 
 .obras-destacadas {
