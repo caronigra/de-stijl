@@ -942,14 +942,25 @@ body.artistas #hero {
 .artista-header {
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.artista-avatar {
+    align-self: stretch;
 }
 
 .artista-avatar img {
-    height: 400px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center top;
     border: 3px solid #0f0d0b;
+}
+
+.artista-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .artista-info h2 {
@@ -957,6 +968,7 @@ body.artistas #hero {
     font-size: 32px;
     font-weight: 700;
     color: #0f0d0b;
+    margin-bottom: 20px;
 }
 
 .periodo {
@@ -966,13 +978,39 @@ body.artistas #hero {
     letter-spacing: 1px;
 }
 
-.artista-biografia h3,
-.evolucion-artista h3 {
+.artista-biografia {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.artista-biografia h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
     color: #0f0d0b;
     letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.evolucion-artista {
+    background-color: #dfe1e6;
+    padding: 30px;
+    margin-top: 0;
+    border: 3px solid #0f0d0b;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.evolucion-artista h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0f0d0b;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin-top: 0;
 }
 
 .artista-biografia p {
@@ -987,6 +1025,15 @@ body.artistas #hero {
     flex-direction: column;
     gap: 40px;
     margin-top: 30px;
+}
+
+.obras-destacadas-externa {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .obra h4 {
