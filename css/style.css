@@ -923,8 +923,8 @@ body.artistas #hero {
 
 #perfiles-artistas .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
+    margin: 32px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -1143,7 +1143,7 @@ body.artistas #hero {
 /* Revista De Stijl */
 #revista-de-stijl {
     background-color: #dfe1e6;
-    padding: 32px 0;
+    padding: 32px;
     margin-top: 32px;
 }
 
@@ -1177,7 +1177,8 @@ body.artistas #hero {
 
 /* Colaboraciones Destacadas */
 #colaboraciones {
-    padding: 32px 0;
+    padding: 32px;
+    margin: 32px;
 }
 
 #colaboraciones h2 {
@@ -1210,9 +1211,9 @@ body.artistas #hero {
 }
 
 .colaboracion-card .colaboracion-imagen img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
