@@ -950,14 +950,14 @@ body.artistas #hero {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #ff0000;
+    background-color: #CE350C;
     color: white;
     padding: 8px 16px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
-    letter-spacing: 1px;
-    border: 2px solid #0f0d0b;
+    letter-spacing: 2px;
+    border: 3px solid #0f0d0b;
 }
 
 .artista-avatar {
