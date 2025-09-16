@@ -933,7 +933,7 @@ body.artistas #hero {
 .artista-perfil {
     background: white;
     border: 3px solid #0f0d0b;
-    padding: 40px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -946,7 +946,6 @@ body.artistas #hero {
 }
 
 .artista-avatar img {
-    width: 400px;
     height: 400px;
     object-fit: cover;
     object-position: center top;
@@ -970,11 +969,10 @@ body.artistas #hero {
 .artista-biografia h3,
 .evolucion-artista h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     color: #0f0d0b;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 .artista-biografia p {
