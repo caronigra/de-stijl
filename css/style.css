@@ -1100,7 +1100,6 @@ body.artistas #hero {
     display: flex;
     gap: 30px;
     align-items: flex-start;
-    flex-direction: row-reverse;
 }
 
 .obra-imagen {
