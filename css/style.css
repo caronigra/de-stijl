@@ -85,7 +85,7 @@ nav ul li a {
     font-size: 18px;
     letter-spacing: 1px;
     font-weight: 400;
-    color: #333;
+    color: #0f0d0b;
     line-height: 1.6;
 }
 
@@ -615,7 +615,7 @@ nav ul li a {
 .expresion-universal .rect:nth-child(4) {
     width: 8px;
     height: 80px;
-    background: #333;
+    background: #0f0d0b;
 }
 
 .principle-title {
@@ -1056,6 +1056,11 @@ body.artistas #hero {
     gap: 40px;
 }
 
+.obra {
+    border: 3px solid #0f0d0b;
+    padding: 20px;
+}
+
 .obra h4 {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -1075,7 +1080,6 @@ body.artistas #hero {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 3px solid #0f0d0b;
     flex-shrink: 0;
 }
 
@@ -1083,7 +1087,7 @@ body.artistas #hero {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: #0f0d0b;
     margin: 0;
 }
 
@@ -1103,19 +1107,20 @@ body.artistas #hero {
 
 .obra-imagen {
     flex-shrink: 0;
+    width: 300px;
+    height: 300px;
 }
 
 .obra-imagen img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 3px solid #0f0d0b;
 }
 
 .obra-descripcion {
-    flex: 1;
+    flex-direction: column;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 /* Revista De Stijl */
@@ -1160,7 +1165,7 @@ body.artistas #hero {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.7;
-    color: #333;
+    color: #0f0d0b;
     margin: 0 0 20px 0;
 }
 
@@ -1191,7 +1196,7 @@ body.artistas #hero {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    color: #333;
+    color: #0f0d0b;
     margin: 0 0 15px 0;
     padding-left: 0;
 }
@@ -1264,7 +1269,7 @@ body.artistas #hero {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    color: #333;
+    color: #0f0d0b;
     margin: 0;
 }
 
