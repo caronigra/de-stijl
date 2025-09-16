@@ -1087,6 +1087,37 @@ body.artistas #hero {
     margin: 0;
 }
 
+/* Alternating image layout styles */
+.obra.imagen-derecha .obra-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.obra.imagen-izquierda .obra-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.obra-imagen {
+    flex-shrink: 0;
+}
+
+.obra-imagen img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #0f0d0b;
+}
+
+.obra-descripcion {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
 /* Revista De Stijl */
 #revista-de-stijl {
     background-color: #dfe1e6;
@@ -1331,12 +1362,15 @@ body.artistas #hero {
         font-size: 2rem;
     }
 
-    .obra-content {
+    .obra-content,
+    .obra.imagen-izquierda .obra-content,
+    .obra.imagen-derecha .obra-content {
         flex-direction: column;
         gap: 20px;
     }
 
-    .obra-content img {
+    .obra-content img,
+    .obra-imagen img {
         width: 100%;
         height: auto;
         max-height: 300px;
