@@ -1177,41 +1177,26 @@ body.artistas #hero {
 
 /* Colaboraciones Destacadas */
 #colaboraciones {
-    background-color: white;
-    padding: 80px 0;
-}
-
-#colaboraciones .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
+    padding: 32px 0;
 }
 
 #colaboraciones h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: 32px;
     font-weight: 700;
     color: #0f0d0b;
     text-align: center;
-    margin: 0 0 60px 0;
     letter-spacing: 2px;
 }
 
 .colaboraciones-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
 }
 
 .colaboracion-card {
     border: 3px solid #0f0d0b;
-    background: white;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.colaboracion-card:hover {
-    transform: translateY(-5px);
 }
 
 .colaboracion-imagen img {
@@ -1227,7 +1212,7 @@ body.artistas #hero {
 
 .colaboracion-info h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
+    font-size: 24px;
     font-weight: 700;
     color: #0f0d0b;
     margin: 0 0 15px 0;
@@ -1236,8 +1221,8 @@ body.artistas #hero {
 
 .colaboracion-info p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.7;
     color: #0f0d0b;
     margin: 0;
 }
@@ -1245,22 +1230,16 @@ body.artistas #hero {
 /* Otros Artistas Destacados */
 #otros-artistas {
     background-color: #182c6d;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
-#otros-artistas .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-}
 
 #otros-artistas h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: 32px;
     font-weight: 700;
     color: white;
     text-align: center;
-    margin: 0 0 60px 0;
     letter-spacing: 2px;
 }
 
@@ -1275,11 +1254,6 @@ body.artistas #hero {
     border: 3px solid #0f0d0b;
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.artista-card:hover {
-    transform: translateY(-5px);
 }
 
 .artista-imagen img {
@@ -1292,18 +1266,16 @@ body.artistas #hero {
 
 .artista-card h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 700;
     color: #0f0d0b;
-    margin: 0 0 5px 0;
     letter-spacing: 1px;
 }
 
 .artista-card p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: #666;
-    margin: 0;
+    font-size: 16px;
+    color: #0f0d0b;
     font-weight: 500;
 }
 
