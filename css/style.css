@@ -923,7 +923,7 @@ body.artistas #hero {
 
 #perfiles-artistas .container {
     max-width: 1200px;
-    margin: 32px;
+    margin: 32px auto;
     padding: 32px;
     display: flex;
     flex-direction: column;
