@@ -204,11 +204,21 @@ nav ul li a {
 .cuadrado2 {
     background-color: #dfe1e6;
     border: 3px solid #0f0d0b;
+    transition: background-color 0.8s ease;
+}
+
+.cuadrado2:hover {
+    background-color: #000000;
 }
 
 .cuadrado3 {
     background-color: #182c6d;
     border: 3px solid #0f0d0b;
+    transition: background-color 0.8s ease;
+}
+
+.cuadrado3:hover {
+    background-color: #ffffff;
 }
 
 .cuadrado4 {
