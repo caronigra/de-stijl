@@ -939,6 +939,25 @@ body.artistas #hero {
     gap: 40px;
 }
 
+.artista-perfil.artista-amarillo {
+    background: #dfe1e6;
+}
+
+.artista-perfil.artista-amarillo .artista-info h2,
+.artista-perfil.artista-amarillo .artista-biografia h3,
+.artista-perfil.artista-amarillo .artista-biografia p {
+    color: #0f0d0b;
+}
+
+.artista-perfil.artista-amarillo .evolucion-artista {
+    background-color: #182c6d;
+}
+
+.artista-perfil.artista-amarillo .evolucion-artista h3,
+.artista-perfil.artista-amarillo .evolucion-artista p {
+    color: #fff;
+}
+
 .artista-header {
     display: flex;
     gap: 30px;
@@ -962,10 +981,12 @@ body.artistas #hero {
 
 .artista-avatar {
     align-self: stretch;
+    width: 250px;
+    flex-shrink: 0;
 }
 
 .artista-avatar img {
-    width: 100%;
+    width: 250px;
     height: 100%;
     object-fit: cover;
     object-position: center top;
