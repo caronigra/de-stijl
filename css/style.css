@@ -927,7 +927,7 @@ body.artistas #hero {
     padding: 0 32px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 32px;
 }
 
 .artista-perfil {
@@ -1049,11 +1049,9 @@ body.artistas #hero {
 
 .obras-destacadas-externa {
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 32px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
 }
 
 .obra {
@@ -1063,8 +1061,8 @@ body.artistas #hero {
 
 .obra h4 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 700;
     color: #0f0d0b;
     margin: 0 0 20px 0;
     letter-spacing: 1px;
