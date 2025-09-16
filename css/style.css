@@ -39,7 +39,45 @@ nav ul li a {
     font-weight: 500;
     font-size: 20px;
 }
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espacio entre buscador y botón */
+}
 
+/* Buscador */
+#search {
+  display: flex;
+  align-items: stretch;
+}
+
+#search input {
+  border: 3px solid #0f0d0b;
+  border-right: none;
+  padding: 8px 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  outline: none;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+#search button {
+  background-color: #182c6d;
+  border: 3px solid #0f0d0b;
+  border-left: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+#search button .material-icons {
+  color: #fff;
+  font-size: 24px;
+}
 
 /* Contenedor principal */
 .contenedor-principal {
