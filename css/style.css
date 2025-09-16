@@ -139,6 +139,31 @@ nav ul li a {
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: background-color 0.3s ease, gap 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.cuadrado-texto .btn-explorar .arrow-icon {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 24px;
+    width: 0;
+    overflow: hidden;
+}
+
+.cuadrado-texto .btn-explorar:hover {
+    background-color: #182c6d;
+    color: #fff;
+    gap: 8px;
+}
+
+.cuadrado-texto .btn-explorar:hover .arrow-icon {
+    opacity: 1;
+    transform: translateX(0);
+    width: auto;
 }
 
 /* Cuadrado de colores */
