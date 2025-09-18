@@ -1,12 +1,12 @@
-// Funcionalidad para la página de Obras
+// Funcionalidad para la página de Obras con Lightbox2
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Obras.js cargado correctamente');
 
     // Inicializar filtros
     initFilters();
 
-    // Inicializar PhotoSwipe
-    initPhotoSwipe();
-
+    // Configurar Lightbox
+    configureLightbox();
 });
 
 // Función para inicializar los filtros
@@ -36,175 +36,55 @@ function initFilters() {
                     section.classList.add('hidden');
                 }
             });
+
+            console.log('Filtro aplicado:', filter);
         });
     });
 }
 
-// Función para inicializar PhotoSwipe
-function initPhotoSwipe() {
-    const galleryItems = [];
-    const obraItems = document.querySelectorAll('.obra-item');
-
-    // Construir array de elementos para PhotoSwipe
-    obraItems.forEach((item, index) => {
-        const img = item.querySelector('img');
-        const texto = item.querySelector('.obra-texto').textContent;
-
-        galleryItems.push({
-            src: img.src.replace('300x250', '800x600'), // Usar imagen más grande
-            width: parseInt(item.getAttribute('data-pswp-width')) || 800,
-            height: parseInt(item.getAttribute('data-pswp-height')) || 600,
-            alt: img.alt,
-            title: texto,
-            caption: `
-                <div class="obra-info">
-                    <h3>${img.alt}</h3>
-                    <p><strong>Artista:</strong> Piet Mondrian</p>
-                    <p><strong>Año:</strong> 1920-1925</p>
-                    <p><strong>Técnica:</strong> Óleo sobre lienzo</p>
-                    <p><strong>Descripción:</strong> ${texto}</p>
-                </div>
-            `
+// Configuración de Lightbox2
+function configureLightbox() {
+    // Verificar que Lightbox esté disponible
+    if (typeof lightbox !== 'undefined') {
+        // Configurar opciones de Lightbox
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': "Imagen %1 de %2",
+            'fadeDuration': 300,
+            'imageFadeDuration': 300,
+            'maxWidth': 1200,
+            'maxHeight': 800,
+            'positionFromTop': 50,
+            'showImageNumberLabel': true,
+            'alwaysShowNavOnTouchDevices': true,
+            'fitImagesInViewport': true,
+            'sanitizeTitle': false
         });
 
-        // Agregar event listener a cada item
-        item.addEventListener('click', function() {
-            openPhotoSwipe(index);
-        });
-    });
-
-    // Función para abrir PhotoSwipe en un índice específico
-    function openPhotoSwipe(index) {
-        // Filtrar solo elementos visibles
-        const visibleItems = [];
-        const visibleIndexMap = [];
-
-        obraItems.forEach((item, originalIndex) => {
-            const section = item.closest('.obras-seccion');
-            if (!section.classList.contains('hidden')) {
-                visibleItems.push(galleryItems[originalIndex]);
-                visibleIndexMap.push(originalIndex);
-            }
-        });
-
-        // Encontrar el índice correcto en los elementos visibles
-        const visibleIndex = visibleIndexMap.indexOf(index);
-
-        if (visibleIndex === -1) return; // El elemento no está visible
-
-        // Crear y abrir galería con PhotoSwipe v5
-        const gallery = new PhotoSwipe({
-            dataSource: visibleItems,
-            index: visibleIndex,
-            // Configuraciones de PhotoSwipe v5
-            bgOpacity: 0.95,
-            showHideAnimationType: 'fade',
-            closeOnVerticalDrag: true,
-            pinchToClose: true,
-            returnFocus: true,
-            trapFocus: true,
-            // Zoom
-            maxZoomLevel: 3,
-            initialZoomLevel: 'fit',
-            secondaryZoomLevel: 1.5,
-            // Gestos
-            mouseMovePan: true,
-            // Configuraciones de UI
-            arrowKeys: true,
-            escKey: true,
-            // Posición del thumbnail para animación
-            getViewportSizeFn: () => {
-                return {
-                    x: 0,
-                    y: 0,
-                    w: window.innerWidth,
-                    h: window.innerHeight
-                };
-            }
-        });
-
-        // Event listeners para PhotoSwipe v5
-        gallery.on('change', () => {
-            updateCounterV5(gallery);
-        });
-
-        gallery.on('afterInit', () => {
-            updateCounterV5(gallery);
-        });
-
-        gallery.on('loadComplete', (e) => {
-            // Imagen cargada completamente
-        });
-
-        gallery.init();
-    }
-
-    // Función para actualizar el contador personalizado v5
-    function updateCounterV5(gallery) {
-        const counter = document.querySelector('.pswp__counter');
-        if (counter) {
-            counter.innerHTML = `${gallery.currIndex + 1} / ${gallery.getNumItems()}`;
-        }
+        console.log('Lightbox configurado correctamente');
+    } else {
+        console.error('Lightbox no está disponible');
     }
 }
 
-// Función auxiliar para obtener elementos visibles
-function getVisibleItems() {
-    const visibleItems = [];
-    document.querySelectorAll('.obra-item').forEach(item => {
-        const section = item.closest('.obras-seccion');
-        if (!section.classList.contains('hidden')) {
-            visibleItems.push(item);
-        }
-    });
-    return visibleItems;
-}
-
-// Lazy loading para imágenes (opcional)
-function initLazyLoading() {
-    const images = document.querySelectorAll('img[loading="lazy"]');
-
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.src;
-                    img.classList.remove('lazy');
-                    imageObserver.unobserve(img);
-                }
-            });
-        });
-
-        images.forEach(img => imageObserver.observe(img));
-    }
-}
-
-// Función para smooth scroll a secciones (opcional)
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
-    }
-}
-
-// Manejo de errores para imágenes
+// Función para manejo de errores de imágenes
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.obra-item img');
     images.forEach(img => {
         img.addEventListener('error', function() {
-            // Fallback image si la imagen no carga
+            console.log('Error cargando imagen:', this.src);
             this.src = 'https://via.placeholder.com/300x250/CCCCCC/666666?text=Imagen+no+disponible';
+        });
+
+        img.addEventListener('load', function() {
+            console.log('Imagen cargada:', this.alt);
         });
     });
 });
 
-// Keyboard navigation
+// Navegación por teclado
 document.addEventListener('keydown', function(e) {
-    // ESC para cerrar filtros activos o volver a mostrar todas las obras
     if (e.key === 'Escape') {
         const allButton = document.querySelector('.filtro-btn[data-filter="all"]');
         if (allButton && !allButton.classList.contains('active')) {
@@ -213,24 +93,32 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Animaciones de entrada para las obras (opcional)
-function animateOnScroll() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    });
+// Agregar efecto hover mejorado
+document.addEventListener('DOMContentLoaded', function() {
+    const obraItems = document.querySelectorAll('.obra-item');
 
-    document.querySelectorAll('.obra-item').forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(20px)';
-        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(item);
+    obraItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+        });
+
+        item.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+        });
     });
-}
+});
+
+// Debug: verificar que jQuery y Lightbox estén cargados
+window.addEventListener('load', function() {
+    if (typeof jQuery === 'undefined') {
+        console.error('jQuery no está cargado. Verificar el CDN.');
+    } else {
+        console.log('jQuery está disponible:', jQuery.fn.jquery);
+    }
+
+    if (typeof lightbox === 'undefined') {
+        console.error('Lightbox no está cargado. Verificar el CDN.');
+    } else {
+        console.log('Lightbox está disponible');
+    }
+});

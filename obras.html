@@ -16,8 +16,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- PhotoSwipe CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="artistas.html">Artistas</a></li>
                 <li><a href="obras.html">Obras</a></li>
-                <li><a href="filosofia.html">Filosof�a</a></li>
+                <li><a href="filosofia.html">Filosofía</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -58,8 +58,8 @@
                 <button class="filtro-btn" data-filter="pintura">PINTURA</button>
                 <button class="filtro-btn" data-filter="arquitectura">ARQUITECTURA</button>
                 <button class="filtro-btn" data-filter="mobiliario">MOBILIARIO</button>
-                <button class="filtro-btn" data-filter="grafico">DISE�O GR�FICO</button>
-                <button class="filtro-btn" data-filter="relevantes">IM�GENES RELEVANTES</button>
+                <button class="filtro-btn" data-filter="grafico">DISEÑO GRÁFICO</button>
+                <button class="filtro-btn" data-filter="relevantes">IMÁGENES RELEVANTES</button>
             </div>
         </section>
 
@@ -70,52 +70,76 @@
             <section class="obras-seccion" data-category="pintura">
                 <h2 class="seccion-titulo">PINTURAS</h2>
                 <div class="grid-pinturas">
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Pintura+1" alt="Pintura 1" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg/800px-Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg" data-lightbox="gallery" data-title="Composición con Rojo, Azul y Amarillo - Piet Mondrian (1930) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg/300px-Piet_Mondriaan%2C_1930_-_Mondrian_Composition_II_in_Red%2C_Blue%2C_and_Yellow.jpg" alt="Composición con Rojo, Azul y Amarillo" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Pintura+2" alt="Pintura 2" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mondrian_CompRYB.jpg/800px-Mondrian_CompRYB.jpg" data-lightbox="gallery" data-title="Composición en Rojo, Amarillo y Azul - Piet Mondrian (1921) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mondrian_CompRYB.jpg/300px-Mondrian_CompRYB.jpg" alt="Composición en Rojo, Amarillo y Azul" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Pintura+3" alt="Pintura 3" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Piet_Mondrian%2C_1921_-_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg/800px-Piet_Mondrian%2C_1921_-_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg" data-lightbox="gallery" data-title="Composición en Rojo, Amarillo, Azul y Negro - Piet Mondrian (1921) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Piet_Mondrian%2C_1921_-_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg/300px-Piet_Mondrian%2C_1921_-_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg" alt="Composición en Rojo, Amarillo, Azul y Negro" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Pintura+4" alt="Pintura 4" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mondrian_Composition_A.jpg/800px-Mondrian_Composition_A.jpg" data-lightbox="gallery" data-title="Composición A - Piet Mondrian (1920) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mondrian_Composition_A.jpg/300px-Mondrian_Composition_A.jpg" alt="Composición A" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Pintura+5" alt="Pintura 5" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Piet_Mondrian_-_Tableau_I.jpg/800px-Piet_Mondrian_-_Tableau_I.jpg" data-lightbox="gallery" data-title="Tableau I - Piet Mondrian (1921) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Piet_Mondrian_-_Tableau_I.jpg/300px-Piet_Mondrian_-_Tableau_I.jpg" alt="Tableau I" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Pintura+6" alt="Pintura 6" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Theo_van_Doesburg_Composition_VII_%28the_three_graces%29.jpg/800px-Theo_van_Doesburg_Composition_VII_%28the_three_graces%29.jpg" data-lightbox="gallery" data-title="Composición VII (Las Tres Gracias) - Theo van Doesburg (1917) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Theo_van_Doesburg_Composition_VII_%28the_three_graces%29.jpg/300px-Theo_van_Doesburg_Composition_VII_%28the_three_graces%29.jpg" alt="Composición VII" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Pintura+7" alt="Pintura 7" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Theo_van_Doesburg_Composition_VIII_%28The_Cow%29_1918.jpg/800px-Theo_van_Doesburg_Composition_VIII_%28The_Cow%29_1918.jpg" data-lightbox="gallery" data-title="Composición VIII (La Vaca) - Theo van Doesburg (1918) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Theo_van_Doesburg_Composition_VIII_%28The_Cow%29_1918.jpg/300px-Theo_van_Doesburg_Composition_VIII_%28The_Cow%29_1918.jpg" alt="Composición VIII (La Vaca)" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Pintura+8" alt="Pintura 8" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bart_van_der_Leck_-_Composition_1917_No._3_%28Leaving_the_Factory%29.jpg/800px-Bart_van_der_Leck_-_Composition_1917_No._3_%28Leaving_the_Factory%29.jpg" data-lightbox="gallery" data-title="Composición 1917 No. 3 (Saliendo de la Fábrica) - Bart van der Leck (1917) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bart_van_der_Leck_-_Composition_1917_No._3_%28Leaving_the_Factory%29.jpg/300px-Bart_van_der_Leck_-_Composition_1917_No._3_%28Leaving_the_Factory%29.jpg" alt="Composición 1917 No. 3" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Pintura+9" alt="Pintura 9" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Piet_Mondrian%2C_1926%2C_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg/800px-Piet_Mondrian%2C_1926%2C_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg" data-lightbox="gallery" data-title="Composición en Rojo, Amarillo, Azul y Negro - Piet Mondrian (1926) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Piet_Mondrian%2C_1926%2C_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg/300px-Piet_Mondrian%2C_1926%2C_Composition_en_rouge%2C_jaune%2C_bleu_et_noir.jpg" alt="Composición 1926" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Pintura+10" alt="Pintura 10" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Piet_Mondrian_-_Composition_with_Large_Red_Plane%2C_Yellow%2C_Black%2C_Gray%2C_and_Blue_-_1921.jpg/800px-Piet_Mondrian_-_Composition_with_Large_Red_Plane%2C_Yellow%2C_Black%2C_Gray%2C_and_Blue_-_1921.jpg" data-lightbox="gallery" data-title="Composición con Gran Plano Rojo, Amarillo, Negro, Gris y Azul - Piet Mondrian (1921) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Piet_Mondrian_-_Composition_with_Large_Red_Plane%2C_Yellow%2C_Black%2C_Gray%2C_and_Blue_-_1921.jpg/300px-Piet_Mondrian_-_Composition_with_Large_Red_Plane%2C_Yellow%2C_Black%2C_Gray%2C_and_Blue_-_1921.jpg" alt="Composición con Gran Plano Rojo" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Pintura+11" alt="Pintura 11" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Vilmos_Husz%C3%A1r_-_Composition_%28Still_Life%29_-_1918.jpg/800px-Vilmos_Husz%C3%A1r_-_Composition_%28Still_Life%29_-_1918.jpg" data-lightbox="gallery" data-title="Composición (Naturaleza Muerta) - Vilmos Huszár (1918) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Vilmos_Husz%C3%A1r_-_Composition_%28Still_Life%29_-_1918.jpg/300px-Vilmos_Husz%C3%A1r_-_Composition_%28Still_Life%29_-_1918.jpg" alt="Composición (Naturaleza Muerta)" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Pintura+12" alt="Pintura 12" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Piet_Mondrian%2C_1922_-_Tableau_I%2C_with_Red%2C_Black%2C_Blue_and_Yellow.jpg/800px-Piet_Mondrian%2C_1922_-_Tableau_I%2C_with_Red%2C_Black%2C_Blue_and_Yellow.jpg" data-lightbox="gallery" data-title="Tableau I con Rojo, Negro, Azul y Amarillo - Piet Mondrian (1922) - Óleo sobre lienzo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Piet_Mondrian%2C_1922_-_Tableau_I%2C_with_Red%2C_Black%2C_Blue_and_Yellow.jpg/300px-Piet_Mondrian%2C_1922_-_Tableau_I%2C_with_Red%2C_Black%2C_Blue_and_Yellow.jpg" alt="Tableau I con Rojo, Negro, Azul y Amarillo" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
                 </div>
@@ -125,20 +149,28 @@
             <section class="obras-seccion" data-category="arquitectura">
                 <h2 class="seccion-titulo">ARQUITECTURA</h2>
                 <div class="grid-fila">
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Arquitectura+1" alt="Arquitectura 1" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rietveld_Schr%C3%B6der_House_HayKranen-20.jpg/800px-Rietveld_Schr%C3%B6der_House_HayKranen-20.jpg" data-lightbox="gallery" data-title="Casa Rietveld Schröder - Gerrit Rietveld (1924) - Utrecht, Holanda">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rietveld_Schr%C3%B6der_House_HayKranen-20.jpg/300px-Rietveld_Schr%C3%B6der_House_HayKranen-20.jpg" alt="Casa Rietveld Schröder" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Arquitectura+2" alt="Arquitectura 2" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Rietveld_Schr%C3%B6der_House_interior.jpg/800px-Rietveld_Schr%C3%B6der_House_interior.jpg" data-lightbox="gallery" data-title="Interior Casa Rietveld Schröder - Gerrit Rietveld (1924) - Utrecht, Holanda">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Rietveld_Schr%C3%B6der_House_interior.jpg/300px-Rietveld_Schr%C3%B6der_House_interior.jpg" alt="Interior Casa Rietveld Schröder" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Arquitectura+3" alt="Arquitectura 3" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Hook_of_Holland_housing_estate_by_J.J.P._Oud.jpg/800px-Hook_of_Holland_housing_estate_by_J.J.P._Oud.jpg" data-lightbox="gallery" data-title="Vivienda Social Hook of Holland - J.J.P. Oud (1926-1927) - Rotterdam, Holanda">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Hook_of_Holland_housing_estate_by_J.J.P._Oud.jpg/300px-Hook_of_Holland_housing_estate_by_J.J.P._Oud.jpg" alt="Vivienda Social Hook of Holland" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Arquitectura+4" alt="Arquitectura 4" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Villa_Henny%2C_Huis_ter_Heide_%283%29.jpg/800px-Villa_Henny%2C_Huis_ter_Heide_%283%29.jpg" data-lightbox="gallery" data-title="Villa Henny - Robert van 't Hoff (1919) - Huis ter Heide, Holanda">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Villa_Henny%2C_Huis_ter_Heide_%283%29.jpg/300px-Villa_Henny%2C_Huis_ter_Heide_%283%29.jpg" alt="Villa Henny" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
                 </div>
@@ -148,66 +180,90 @@
             <section class="obras-seccion" data-category="mobiliario">
                 <h2 class="seccion-titulo">MOBILIARIO</h2>
                 <div class="grid-fila">
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Mobiliario+1" alt="Mobiliario 1" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Red_and_Blue_Chair_by_Gerrit_Rietveld_at_the_Stedelijk_Museum_Amsterdam.jpg/800px-Red_and_Blue_Chair_by_Gerrit_Rietveld_at_the_Stedelijk_Museum_Amsterdam.jpg" data-lightbox="gallery" data-title="Silla Roja y Azul - Gerrit Rietveld (1917-1918) - Madera y pintura">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Red_and_Blue_Chair_by_Gerrit_Rietveld_at_the_Stedelijk_Museum_Amsterdam.jpg/300px-Red_and_Blue_Chair_by_Gerrit_Rietveld_at_the_Stedelijk_Museum_Amsterdam.jpg" alt="Silla Roja y Azul" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Mobiliario+2" alt="Mobiliario 2" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rietveld_Table.jpg/800px-Rietveld_Table.jpg" data-lightbox="gallery" data-title="Mesa Schröder - Gerrit Rietveld (1923) - Madera lacada">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Rietveld_Table.jpg/300px-Rietveld_Table.jpg" alt="Mesa Schröder" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Mobiliario+3" alt="Mobiliario 3" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Zig-Zag_Chair_by_Gerrit_Rietveld.jpg/800px-Zig-Zag_Chair_by_Gerrit_Rietveld.jpg" data-lightbox="gallery" data-title="Silla Zig-Zag - Gerrit Rietveld (1934) - Madera contrachapada">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Zig-Zag_Chair_by_Gerrit_Rietveld.jpg/300px-Zig-Zag_Chair_by_Gerrit_Rietveld.jpg" alt="Silla Zig-Zag" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Mobiliario+4" alt="Mobiliario 4" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rietveld_Sideboard_1919.jpg/800px-Rietveld_Sideboard_1919.jpg" data-lightbox="gallery" data-title="Aparador Sideboard - Gerrit Rietveld (1919) - Madera y pintura">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rietveld_Sideboard_1919.jpg/300px-Rietveld_Sideboard_1919.jpg" alt="Aparador Sideboard" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
                 </div>
             </section>
 
-            <!-- DISE�O GR�FICO - 4 items en fila -->
+            <!-- DISEÑO GRÁFICO - 4 items en fila -->
             <section class="obras-seccion" data-category="grafico">
-                <h2 class="seccion-titulo">DISE�O GR�FICO</h2>
+                <h2 class="seccion-titulo">DISEÑO GRÁFICO</h2>
                 <div class="grid-fila">
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Grafico+1" alt="Dise�o Gr�fico 1" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/De_Stijl_first_issue_1917.jpg/800px-De_Stijl_first_issue_1917.jpg" data-lightbox="gallery" data-title="Revista De Stijl No.1 - Theo van Doesburg (1917) - Tipografía y diseño">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/De_Stijl_first_issue_1917.jpg/300px-De_Stijl_first_issue_1917.jpg" alt="Revista De Stijl No.1" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Grafico+2" alt="Dise�o Gr�fico 2" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Aubette_Dance_Hall_by_Theo_van_Doesburg.jpg/800px-Aubette_Dance_Hall_by_Theo_van_Doesburg.jpg" data-lightbox="gallery" data-title="Salón de Baile Aubette - Theo van Doesburg (1928) - Diseño interior">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Aubette_Dance_Hall_by_Theo_van_Doesburg.jpg/300px-Aubette_Dance_Hall_by_Theo_van_Doesburg.jpg" alt="Salón de Baile Aubette" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Grafico+3" alt="Dise�o Gr�fico 3" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/De_Stijl_Typography_Example.jpg/800px-De_Stijl_Typography_Example.jpg" data-lightbox="gallery" data-title="Tipografía De Stijl - Theo van Doesburg (1925) - Diseño de fuentes">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/De_Stijl_Typography_Example.jpg/300px-De_Stijl_Typography_Example.jpg" alt="Tipografía De Stijl" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Grafico+4" alt="Dise�o Gr�fico 4" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Art_Concret_manifesto_1930.jpg/800px-Art_Concret_manifesto_1930.jpg" data-lightbox="gallery" data-title="Manifesto Arte Concreto - Theo van Doesburg (1930) - Publicación">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Art_Concret_manifesto_1930.jpg/300px-Art_Concret_manifesto_1930.jpg" alt="Manifesto Arte Concreto" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
                 </div>
             </section>
 
-            <!-- IM�GENES RELEVANTES - 4 items en fondo gris -->
+            <!-- IMÁGENES RELEVANTES - 4 items en fondo gris -->
             <section class="obras-seccion relevantes-bg" data-category="relevantes">
-                <h2 class="seccion-titulo">IM�GENES RELEVANTES</h2>
+                <h2 class="seccion-titulo">IMÁGENES RELEVANTES</h2>
                 <div class="grid-fila">
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Relevante+1" alt="Imagen Relevante 1" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/De_Stijl_group_photo_1923.jpg/800px-De_Stijl_group_photo_1923.jpg" data-lightbox="gallery" data-title="Grupo De Stijl - Fotografía histórica (1923) - Archivo histórico">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/De_Stijl_group_photo_1923.jpg/300px-De_Stijl_group_photo_1923.jpg" alt="Grupo De Stijl" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Relevante+2" alt="Imagen Relevante 2" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mondrian_studio_Paris_1926.jpg/800px-Mondrian_studio_Paris_1926.jpg" data-lightbox="gallery" data-title="Estudio de Mondrian - Fotografía (1926) - París, Francia">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Mondrian_studio_Paris_1926.jpg/300px-Mondrian_studio_Paris_1926.jpg" alt="Estudio de Mondrian" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Relevante+3" alt="Imagen Relevante 3" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Aubette_Cinema_by_Theo_van_Doesburg_1928.jpg/800px-Aubette_Cinema_by_Theo_van_Doesburg_1928.jpg" data-lightbox="gallery" data-title="Cine Aubette Interior - Fotografía (1928) - Estrasburgo, Francia">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Aubette_Cinema_by_Theo_van_Doesburg_1928.jpg/300px-Aubette_Cinema_by_Theo_van_Doesburg_1928.jpg" alt="Cine Aubette Interior" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
-                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
-                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Relevante+4" alt="Imagen Relevante 4" loading="lazy">
+                    <div class="obra-item">
+                        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Stedelijk_Museum_De_Stijl_Exhibition_1951.jpg/800px-Stedelijk_Museum_De_Stijl_Exhibition_1951.jpg" data-lightbox="gallery" data-title="Exposición De Stijl - Fotografía (1951) - Museo Stedelijk, Amsterdam">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Stedelijk_Museum_De_Stijl_Exhibition_1951.jpg/300px-Stedelijk_Museum_De_Stijl_Exhibition_1951.jpg" alt="Exposición De Stijl" loading="lazy">
+                        </a>
                         <p class="obra-texto">Sollicitudin himenaeos</p>
                     </div>
                 </div>
@@ -225,14 +281,16 @@
             <li><a href="historia.html">Historia</a></li>
             <li><a href="artistas.html">Artistas</a></li>
             <li><a href="obras.html">Obras</a></li>
-            <li><a href="filosofia.html">Filosof�a</a></li>
+            <li><a href="filosofia.html">Filosofía</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        <p>Copyright � 2025 | All Rights Reserved</p>
+        <p>Copyright © 2025 | All Rights Reserved</p>
     </footer>
 
-    <!-- PhotoSwipe JS -->
-    <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.js"></script>
+    <!-- jQuery (requerido por Lightbox) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <script src="js/obras.js"></script>
 </body>
 
