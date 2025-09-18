@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Obras - De Stijl</title>
+    <link rel="icon" href="imagenes/logo-icon.svg" type="icon">
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagenes/logo.svg" alt="logo-de-stijl">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="artistas.html">Artistas</a></li>
+                <li><a href="obras.html">Obras</a></li>
+                <li><a href="filosofia.html">Filosofía</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div id="header-right">
+            <div id="search">
+                <input type="text" placeholder="Buscar...">
+                <button><span class="material-icons">search</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="obras-hero">
+            <div class="hero-content">
+                <h1>OBRAS</h1>
+            </div>
+        </section>
+
+        <!-- Filtros -->
+        <section id="filtros-obras">
+            <div class="filtros-container">
+                <button class="filtro-btn active" data-filter="all">TODAS</button>
+                <button class="filtro-btn" data-filter="pintura">PINTURA</button>
+                <button class="filtro-btn" data-filter="arquitectura">ARQUITECTURA</button>
+                <button class="filtro-btn" data-filter="mobiliario">MOBILIARIO</button>
+                <button class="filtro-btn" data-filter="grafico">DISEÑO GRÁFICO</button>
+                <button class="filtro-btn" data-filter="relevantes">IMÁGENES RELEVANTES</button>
+            </div>
+        </section>
+
+        <!-- Contenido de Obras -->
+        <div id="obras-content">
+
+            <!-- PINTURAS - Grid 4x3 -->
+            <section class="obras-seccion" data-category="pintura">
+                <h2 class="seccion-titulo">PINTURAS</h2>
+                <div class="grid-pinturas">
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Pintura+1" alt="Pintura 1" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Pintura+2" alt="Pintura 2" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Pintura+3" alt="Pintura 3" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Pintura+4" alt="Pintura 4" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Pintura+5" alt="Pintura 5" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Pintura+6" alt="Pintura 6" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Pintura+7" alt="Pintura 7" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Pintura+8" alt="Pintura 8" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Pintura+9" alt="Pintura 9" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Pintura+10" alt="Pintura 10" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Pintura+11" alt="Pintura 11" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Pintura+12" alt="Pintura 12" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ARQUITECTURA - 4 items en fila -->
+            <section class="obras-seccion" data-category="arquitectura">
+                <h2 class="seccion-titulo">ARQUITECTURA</h2>
+                <div class="grid-fila">
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Arquitectura+1" alt="Arquitectura 1" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Arquitectura+2" alt="Arquitectura 2" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Arquitectura+3" alt="Arquitectura 3" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Arquitectura+4" alt="Arquitectura 4" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MOBILIARIO - 4 items en fila -->
+            <section class="obras-seccion" data-category="mobiliario">
+                <h2 class="seccion-titulo">MOBILIARIO</h2>
+                <div class="grid-fila">
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Mobiliario+1" alt="Mobiliario 1" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Mobiliario+2" alt="Mobiliario 2" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Mobiliario+3" alt="Mobiliario 3" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Mobiliario+4" alt="Mobiliario 4" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DISEÑO GRÁFICO - 4 items en fila -->
+            <section class="obras-seccion" data-category="grafico">
+                <h2 class="seccion-titulo">DISEÑO GRÁFICO</h2>
+                <div class="grid-fila">
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Grafico+1" alt="Diseño Gráfico 1" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Grafico+2" alt="Diseño Gráfico 2" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Grafico+3" alt="Diseño Gráfico 3" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Grafico+4" alt="Diseño Gráfico 4" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- IMÁGENES RELEVANTES - 4 items en fondo gris -->
+            <section class="obras-seccion relevantes-bg" data-category="relevantes">
+                <h2 class="seccion-titulo">IMÁGENES RELEVANTES</h2>
+                <div class="grid-fila">
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/CE350C/FFFFFF?text=Relevante+1" alt="Imagen Relevante 1" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/182C6D/FFFFFF?text=Relevante+2" alt="Imagen Relevante 2" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/EECA4B/000000?text=Relevante+3" alt="Imagen Relevante 3" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                    <div class="obra-item" data-pswp-width="800" data-pswp-height="600">
+                        <img src="https://via.placeholder.com/300x250/DFE1E6/000000?text=Relevante+4" alt="Imagen Relevante 4" loading="lazy">
+                        <p class="obra-texto">Sollicitudin himenaeos</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div id="logo">
+            <img src="imagenes/logo.svg" alt="logo-de-stijl">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="filosofia.html">Filosofía</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <p>Copyright © 2025 | All Rights Reserved</p>
+    </footer>
+
+    <!-- PhotoSwipe JS -->
+    <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.js"></script>
+    <script src="js/obras.js"></script>
+</body>
+
+</html>
