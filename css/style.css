@@ -1473,13 +1473,34 @@ body.artistas #hero {
 
 /* Hero Section específico para obras */
 #obras-hero {
-    background-color: #182c6d;
-    height: 40vh;
+    background-image: url(../imagenes/obras/bg-obras.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     margin-bottom: 0;
+}
+
+#obras-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0f0d0b;
+    opacity: 0.5;
+}
+
+#obras-hero .hero-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
 }
 
 #obras-hero .hero-content h1 {
