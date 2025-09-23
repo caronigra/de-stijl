@@ -1775,3 +1775,334 @@ body.artistas #hero {
         height: 180px;
     }
 }
+
+/* Estilos para la página de Filosofía */
+
+/* Hero Section específico para filosofía */
+#filosofia-hero {
+    background-image: url(../imagenes/filosofia/bg-filosofia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0;
+}
+
+#filosofia-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0f0d0b;
+    opacity: 0.5;
+}
+
+#filosofia-hero .hero-content {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#filosofia-hero .hero-content h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+
+#filosofia-hero .hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* Modificaciones a la sección de principios para filosofía */
+.principles-section .principle-description {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+/* Sección TEORÍA */
+#teoria-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.teoria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.teoria-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.teoria-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.teoria-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #0f0d0b;
+}
+
+.teoria-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.teoria-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.teoria-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #0f0d0b;
+    margin-bottom: 20px;
+}
+
+/* Sección MANIFIESTO Y TEXTOS FUNDAMENTALES */
+#manifiesto-section {
+    background-color: #dfe1e6;
+    padding: 60px 0;
+}
+
+.manifiesto-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.manifiesto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.manifiesto-card {
+    background-color: white;
+    border: 3px solid #0f0d0b;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.manifiesto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(15, 13, 11, 0.15);
+}
+
+.manifiesto-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.manifiesto-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #0f0d0b;
+    margin: 0;
+}
+
+/* Sección final FILOSOFÍA con fondo azul */
+#filosofia-final-section {
+    background-color: #d6e7f0;
+    padding: 60px 0;
+}
+
+.filosofia-final-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.filosofia-final-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.filosofia-final-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.filosofia-final-text h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.filosofia-final-text h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.filosofia-final-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #0f0d0b;
+    margin-bottom: 20px;
+}
+
+.filosofia-final-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.filosofia-final-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #0f0d0b;
+}
+
+/* Responsive Design para Filosofía */
+@media (max-width: 1024px) {
+    .teoria-content {
+        gap: 30px;
+    }
+
+    .filosofia-final-content {
+        gap: 30px;
+    }
+
+    .manifiesto-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #filosofia-hero {
+        height: 50vh;
+    }
+
+    #filosofia-hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    #filosofia-hero .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .container-pf {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .teoria-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .filosofia-final-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .teoria-image img,
+    .filosofia-final-image img {
+        height: 300px;
+    }
+
+    .manifiesto-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #filosofia-hero .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    #filosofia-hero .hero-content p {
+        font-size: 1rem;
+    }
+
+    .container-pf {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .teoria-container,
+    .manifiesto-container,
+    .filosofia-final-container {
+        padding: 0 20px;
+    }
+
+    .teoria-image img,
+    .filosofia-final-image img {
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .manifiesto-card {
+        padding: 20px;
+    }
+}
