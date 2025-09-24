@@ -53,26 +53,53 @@
         <!-- Formulario de Contacto -->
         <section id="contacto-form">
             <div class="container">
-                <h2>Envíanos un mensaje</h2>
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <div class="contacto-content">
+                    <div class="form-container">
+                        <div class="form-column">
+                            <h2>Envíanos un mensaje</h2>
+                            <form action="#" method="POST" class="contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Mensaje" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-submit">Enviar mensaje</button>
+                            </form>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                    </div>
+                    <div class="animation-column">
+                        <div class="de-stijl-animation">
+                            <div class="geometric-composition">
+                                <!-- Rectángulos animados -->
+                                <div class="rect rect-red rect-1"></div>
+                                <div class="rect rect-blue rect-2"></div>
+                                <div class="rect rect-yellow rect-3"></div>
+                                <div class="rect rect-white rect-4"></div>
+                                <div class="rect rect-red rect-5"></div>
+                                <div class="rect rect-blue rect-6"></div>
 
-                    <div class="form-group">
-                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                                <!-- Líneas negras -->
+                                <div class="line line-horizontal line-1"></div>
+                                <div class="line line-horizontal line-2"></div>
+                                <div class="line line-vertical line-3"></div>
+                                <div class="line line-vertical line-4"></div>
+                                <div class="line line-horizontal line-5"></div>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="form-group">
-                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Mensaje" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Enviar mensaje</button>
-                </form>
+                </div>
             </div>
         </section>
 

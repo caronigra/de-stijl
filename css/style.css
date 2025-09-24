@@ -2117,8 +2117,276 @@ body.artistas #hero {
 }
 
 /* Estilos del formulario de contacto */
+
+/* Layout de dos columnas */
+.contacto-content {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.form-column {
+    flex: 2;
+    max-width: 600px;
+}
+
+.animation-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Composición geométrica animada */
+.de-stijl-animation {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    background-color: #f5f5f5;
+    border: 3px solid #0f0d0b;
+    overflow: hidden;
+}
+
+.geometric-composition {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* Rectángulos base */
+.rect {
+    position: absolute;
+    border: 2px solid #0f0d0b;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Colores De Stijl */
+.rect-red {
+    background-color: #ce350c;
+}
+
+.rect-blue {
+    background-color: #182c6d;
+}
+
+.rect-yellow {
+    background-color: #eeca4b;
+}
+
+.rect-white {
+    background-color: #ffffff;
+}
+
+/* Posiciones y animaciones específicas de rectángulos */
+.rect-1 {
+    width: 80px;
+    height: 60px;
+    top: 20px;
+    left: 30px;
+    animation-name: moveRect1;
+}
+
+.rect-2 {
+    width: 100px;
+    height: 80px;
+    top: 120px;
+    right: 40px;
+    animation-name: moveRect2;
+    animation-delay: 0.5s;
+}
+
+.rect-3 {
+    width: 60px;
+    height: 100px;
+    bottom: 150px;
+    left: 50px;
+    animation-name: moveRect3;
+    animation-delay: 1s;
+}
+
+.rect-4 {
+    width: 90px;
+    height: 50px;
+    top: 60px;
+    left: 150px;
+    animation-name: moveRect4;
+    animation-delay: 1.5s;
+}
+
+.rect-5 {
+    width: 70px;
+    height: 90px;
+    bottom: 50px;
+    right: 60px;
+    animation-name: moveRect5;
+    animation-delay: 2s;
+}
+
+.rect-6 {
+    width: 50px;
+    height: 70px;
+    top: 200px;
+    left: 80px;
+    animation-name: moveRect6;
+    animation-delay: 2.5s;
+}
+
+/* Animaciones de rectángulos */
+@keyframes moveRect1 {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 1; }
+    25% { transform: translate(20px, -10px) scale(1.1); opacity: 0.9; }
+    50% { transform: translate(-15px, 15px) scale(0.9); opacity: 0.8; }
+    75% { transform: translate(10px, -5px) scale(1.05); opacity: 0.95; }
+}
+
+@keyframes moveRect2 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-20px, 10px) rotate(2deg); }
+    50% { transform: translate(15px, -20px) rotate(-3deg); }
+    75% { transform: translate(-10px, 5px) rotate(1deg); }
+}
+
+@keyframes moveRect3 {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(25px, -30px) scale(1.2); }
+}
+
+@keyframes moveRect4 {
+    0%, 100% { transform: translate(0, 0); opacity: 1; }
+    25% { transform: translate(15px, 20px); opacity: 0.7; }
+    50% { transform: translate(-20px, -15px); opacity: 0.5; }
+    75% { transform: translate(5px, 10px); opacity: 0.8; }
+}
+
+@keyframes moveRect5 {
+    0%, 100% { transform: translate(0, 0) rotate(0deg) scale(1); }
+    33% { transform: translate(-15px, -25px) rotate(-2deg) scale(1.1); }
+    66% { transform: translate(20px, 15px) rotate(3deg) scale(0.9); }
+}
+
+@keyframes moveRect6 {
+    0%, 100% { transform: translate(0, 0); }
+    20% { transform: translate(10px, -15px); }
+    40% { transform: translate(-25px, 20px); }
+    60% { transform: translate(15px, -10px); }
+    80% { transform: translate(-5px, 25px); }
+}
+
+/* Líneas negras */
+.line {
+    position: absolute;
+    background-color: #0f0d0b;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.line-horizontal {
+    height: 3px;
+    animation-name: growHorizontal;
+}
+
+.line-vertical {
+    width: 3px;
+    animation-name: growVertical;
+}
+
+/* Posiciones específicas de líneas */
+.line-1 {
+    top: 100px;
+    left: 20px;
+    width: 150px;
+    animation-delay: 0.5s;
+}
+
+.line-2 {
+    bottom: 120px;
+    right: 30px;
+    width: 120px;
+    animation-delay: 2s;
+}
+
+.line-3 {
+    left: 120px;
+    top: 30px;
+    height: 180px;
+    animation-delay: 1s;
+}
+
+.line-4 {
+    right: 80px;
+    bottom: 60px;
+    height: 140px;
+    animation-delay: 2.5s;
+}
+
+.line-5 {
+    top: 250px;
+    left: 60px;
+    width: 200px;
+    animation-delay: 1.5s;
+}
+
+/* Animaciones de líneas */
+@keyframes growHorizontal {
+    0% { width: 0; opacity: 0; }
+    20% { width: 100%; opacity: 1; }
+    80% { width: 100%; opacity: 1; }
+    100% { width: 0; opacity: 0; }
+}
+
+@keyframes growVertical {
+    0% { height: 0; opacity: 0; }
+    20% { height: 100%; opacity: 1; }
+    80% { height: 100%; opacity: 1; }
+    100% { height: 0; opacity: 0; }
+}
+
+/* Responsive para la página de contacto */
+@media (max-width: 1024px) {
+    .contacto-content {
+        gap: 40px;
+    }
+
+    .de-stijl-animation {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacto-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .animation-column {
+        order: -1; /* Poner la animación arriba en mobile */
+    }
+
+    .de-stijl-animation {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+
+    /* Ajustar tamaños de elementos para mobile */
+    .rect {
+        transform: scale(0.8);
+    }
+
+    .line {
+        transform: scale(0.8);
+    }
+}
 #contacto-hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagenes/hero-contacto.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagenes/historia/bg-hero.jpg');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -2145,30 +2413,37 @@ body.artistas #hero {
 }
 
 #contacto-form {
-    padding: 80px 0;
-    background-color: #f8f9fa;
+    padding: 80px 40px;
+    background-color: #182c6d;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contacto-form .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 32px;
+    width: 100%;
 }
 
 #contacto-form h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
-    color: #0f0d0b;
+    color: #fff;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-top: 0;
 }
 
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .form-group {
@@ -2199,8 +2474,8 @@ body.artistas #hero {
 }
 
 .btn-submit {
-    background-color: #182c6d;
-    color: white;
+    background-color: #eeca4b;
+    color: #0f0d0b;
     border: 3px solid #0f0d0b;
     padding: 15px 30px;
     font-family: 'Montserrat', sans-serif;
@@ -2215,5 +2490,6 @@ body.artistas #hero {
 }
 
 .btn-submit:hover {
-    background-color: #0f1a4d;
+    background-color: #ce350c;
+    color: #fff;
 }
