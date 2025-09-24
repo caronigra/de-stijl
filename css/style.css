@@ -2115,3 +2115,105 @@ body.artistas #hero {
         padding: 20px;
     }
 }
+
+/* Estilos del formulario de contacto */
+#contacto-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagenes/hero-contacto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#contacto-hero .hero-content h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+#contacto-hero .hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#contacto-form {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+#contacto-form .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+#contacto-form h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #0f0d0b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 3px solid #0f0d0b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.btn-submit {
+    background-color: #182c6d;
+    color: white;
+    border: 3px solid #0f0d0b;
+    padding: 15px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0f1a4d;
+}
