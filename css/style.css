@@ -1641,6 +1641,15 @@ body.artistas #hero {
     letter-spacing: 1px;
 }
 
+.obra-texto span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
 /* Filtrado */
 .obras-seccion.hidden {
     display: none;
