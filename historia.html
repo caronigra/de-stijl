@@ -20,11 +20,21 @@
 
 <body>
     <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="imagenes/logo.svg" alt="logo-de-stijl">
-            </a>
+        <div id="header-left">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imagenes/logo.svg" alt="logo-de-stijl">
+                </a>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
+        <!-- Desktop Navigation -->
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -35,6 +45,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+
         <div id="header-right">
             <div id="search">
                 <input type="text" placeholder="Buscar...">
@@ -42,6 +53,21 @@
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="filosofia.html">Filosofía</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="nav-overlay"></div>
     <main>
         <!-- Hero Section -->
         <section id="hero">

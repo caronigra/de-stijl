@@ -16,12 +16,12 @@ header {
     border-bottom: 3px solid #0f0d0b;
 }
 
-/* Bloque izquierdo: logo + menú */
+/* Bloque izquierdo: logo + hamburger */
 #header-left {
     display: flex;
     align-items: center;
     gap: 40px;
-    /* espacio entre logo y menú */
+    /* espacio entre logo y hamburger */
 }
 
 nav ul {
@@ -61,6 +61,135 @@ nav ul li a.active {
 nav ul li a.active:hover {
     background-color: #ce350c;
     color: #fff;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 8px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    z-index: 1001;
+    position: relative;
+}
+
+.hamburger:hover {
+    border: 2px solid #0f0d0b;
+    background-color: #eeca4b;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #0f0d0b;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    display: block;
+    border-radius: 1px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Menu Styles */
+.nav-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #182c6d;
+    border-right: 3px solid #0f0d0b;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 80px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.nav-mobile.active {
+    left: 0;
+}
+
+.nav-mobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 0;
+}
+
+.nav-mobile ul li {
+    border-bottom: 1px solid #0f0d0b;
+}
+
+.nav-mobile ul li:last-child {
+    border-bottom: none;
+}
+
+.nav-mobile ul li a {
+    display: block;
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.nav-mobile ul li a:hover {
+    background-color: #eeca4b;
+    color: #0f0d0b;
+    transform: none;
+    border: none;
+    padding-left: 40px;
+}
+
+.nav-mobile ul li a.active {
+    background-color: #ce350c;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+}
+
+.nav-mobile ul li a.active:hover {
+    background-color: #eeca4b;
+    color: #0f0d0b;
+    padding-left: 40px;
+}
+
+/* Mobile Overlay */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-overlay.active {
+    opacity: 1;
 }
 #header-right {
   display: flex;
@@ -257,6 +386,63 @@ nav ul li a.active:hover {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    /* Hide desktop navigation */
+    nav.navbar {
+        display: none !important;
+    }
+
+    /* Show hamburger menu */
+    .hamburger {
+        display: flex !important;
+    }
+
+    /* Show mobile navigation */
+    .nav-mobile {
+        display: block !important;
+    }
+
+    /* Show mobile overlay */
+    .nav-overlay {
+        display: block !important;
+    }
+
+    /* Adjust header for mobile */
+    #header-left {
+        gap: 20px;
+    }
+
+    /* Hide search on very small screens */
+    #header-right {
+        gap: 8px;
+    }
+
+    #search input {
+        width: 120px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+
+    #search button {
+        padding: 6px 8px;
+    }
+
+    #search button .material-icons {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header-right {
+        display: none;
+    }
 }
 
 /* Responsive cuadros */
