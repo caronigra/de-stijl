@@ -1,10 +1,16 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', 'Orbitron', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 header {
@@ -1621,7 +1627,7 @@ footer p {
     }
 
     .hero-content p {
-        font-size: 1.2rem;
+        font-size: 16px;
     }
 
     .content-grid {
@@ -1695,6 +1701,8 @@ body.artistas #hero {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .artista-perfil {
@@ -1840,6 +1848,8 @@ body.artistas #hero {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .obra {
@@ -1912,6 +1922,8 @@ body.artistas #hero {
     background-color: #dfe1e6;
     padding: 32px;
     margin-top: 32px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .revista-content {
@@ -1945,7 +1957,10 @@ body.artistas #hero {
 /* Colaboraciones Destacadas */
 #colaboraciones {
     padding: 32px;
-    margin: 32px;
+    margin: 32px auto;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #colaboraciones h2 {
@@ -1955,6 +1970,12 @@ body.artistas #hero {
     color: #0f0d0b;
     text-align: center;
     letter-spacing: 2px;
+}
+
+#colaboraciones .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .colaboraciones-grid {
@@ -1967,6 +1988,8 @@ body.artistas #hero {
     border: 3px solid #0f0d0b;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .colaboracion-card .colaboracion-imagen {
@@ -1975,12 +1998,13 @@ body.artistas #hero {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    overflow: hidden;
 }
 
 .colaboracion-card .colaboracion-imagen img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
@@ -2011,6 +2035,9 @@ body.artistas #hero {
 #otros-artistas {
     background-color: #182c6d;
     padding: 40px 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -2061,9 +2088,16 @@ body.artistas #hero {
 
 /* Responsive para página de Artistas */
 @media (max-width: 1024px) {
+    #colaboraciones {
+        padding: 32px 20px;
+        margin: 32px 0;
+        width: 100%;
+    }
+
     .colaboraciones-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        width: 100%;
     }
 
     .artistas-grid {
@@ -2077,15 +2111,36 @@ body.artistas #hero {
         flex-direction: column;
         text-align: center;
         gap: 20px;
+        position: relative;
+    }
+
+    .artista-avatar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
     }
 
     .artista-avatar img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .etiqueta-arte {
+        position: static;
+        display: inline-block;
+        margin: 0;
+        order: 2;
+    }
+
+    .artista-info {
+        width: 100%;
     }
 
     .artista-info h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .obra-content,
@@ -2117,9 +2172,64 @@ body.artistas #hero {
         font-size: 2rem;
     }
 
+    #colaboraciones {
+        padding: 24px 20px;
+        margin: 24px 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #colaboraciones .container {
+        padding: 0;
+        width: 100%;
+    }
+
+    #colaboraciones h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        padding: 0 4px;
+    }
+
     .colaboraciones-grid {
         grid-template-columns: 1fr;
         gap: 25px;
+        width: 100%;
+    }
+
+    .colaboracion-card {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .colaboracion-card .colaboracion-imagen {
+        height: 250px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .colaboracion-card .colaboracion-imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    .colaboracion-info {
+        padding: 24px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .colaboracion-info h3 {
+        font-size: 20px;
+        word-wrap: break-word;
+    }
+
+    .colaboracion-info p {
+        font-size: 15px;
+        line-height: 1.6;
+        word-wrap: break-word;
     }
 
     .artistas-grid {
@@ -2130,19 +2240,62 @@ body.artistas #hero {
     #perfiles-artistas .container {
         padding: 0 20px;
         gap: 60px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .artista-perfil {
         padding: 25px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    #colaboraciones h2,
     #otros-artistas h2 {
         font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
+    #colaboraciones {
+        padding: 20px 16px;
+        margin: 20px 0;
+    }
+
+    #colaboraciones h2 {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .colaboracion-card .colaboracion-imagen {
+        height: 180px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .colaboracion-card .colaboracion-imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        max-width: 100%;
+    }
+
+    .colaboracion-info {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .colaboracion-info h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+        word-wrap: break-word;
+    }
+
+    .colaboracion-info p {
+        font-size: 14px;
+        line-height: 1.6;
+        word-wrap: break-word;
+    }
+
     .artistas-grid {
         grid-template-columns: 1fr;
     }
