@@ -3461,31 +3461,41 @@ body.artistas #hero {
 @media (max-width: 768px) {
     .contacto-content {
         flex-direction: column;
-        gap: 30px;
-        min-height: 50vh;
+        gap: 40px;
+        min-height: auto;
+        padding: 20px 0;
     }
 
     .animation-column {
-        order: -1; /* Poner la animación arriba en mobile */
+        order: -1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .de-stijl-animation {
         width: 100%;
-        max-width: 380px;
-        height: 280px;
+        max-width: 400px;
+        height: 320px;
+        margin: 0 auto;
     }
 
     #contacto-hero {
-        height: 50vh;
+        height: 45vh;
+        min-height: 300px;
+        padding: 20px;
     }
 
     #contacto-hero .hero-content h1 {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+        word-wrap: break-word;
     }
 
     #contacto-hero .hero-content p {
-        font-size: 1.2rem;
+        font-size: 0.95rem;
+        padding: 0 10px;
     }
 
     #contacto-form {
@@ -3495,7 +3505,7 @@ body.artistas #hero {
 
     #contacto-form h2 {
         font-size: 1.8rem;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     .contact-form input,
@@ -3507,49 +3517,110 @@ body.artistas #hero {
     .btn-submit {
         padding: 12px 25px;
         font-size: 15px;
+        width: 100%;
     }
 
-    /* Ajustar tamaños de elementos para mobile */
+    /* Asegurar que los elementos animados sean visibles */
     .rect {
-        transform: scale(0.8);
+        transform-origin: center;
     }
 
     .line {
-        transform: scale(0.8);
+        transform-origin: center;
     }
 }
 
 @media (max-width: 480px) {
+    #contacto-hero {
+        height: 35vh;
+        min-height: 280px;
+        padding: 15px;
+    }
+
     #contacto-hero .hero-content h1 {
-        font-size: 2rem;
-        letter-spacing: 2px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        line-height: 1.2;
     }
 
     #contacto-hero .hero-content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.3px;
+        line-height: 1.3;
     }
 
     #contacto-form {
         padding: 40px 20px;
+        margin-top: 30px;
     }
 
     #contacto-form h2 {
         font-size: 1.5rem;
         text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
     }
 
     .de-stijl-animation {
-        height: 250px;
+        height: 280px;
+        max-width: 360px;
+        border: 2px solid #0f0d0b;
     }
 
+    .geometric-composition {
+        transform: scale(1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 12px;
+        font-size: 14px;
+        border: 2px solid #0f0d0b;
+    }
+
+    .contact-form textarea {
+        min-height: 120px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .btn-submit {
+        padding: 12px 20px;
+        font-size: 14px;
+        width: 100%;
+        border: 2px solid #0f0d0b;
+    }
+
+    /* Mantener los rectángulos y líneas visibles sin escalar */
     .rect {
-        transform: scale(0.7);
+        border: 2px solid #0f0d0b;
     }
 
     .line {
-        transform: scale(0.7);
+        opacity: 1;
     }
 }
+
+/* Media query específica para iPhone 12 y similares (390px - 414px) */
+@media (min-width: 375px) and (max-width: 414px) {
+    #contacto-hero .hero-content h1 {
+        font-size: 1.7rem;
+    }
+
+    #contacto-hero .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .de-stijl-animation {
+        height: 300px;
+        max-width: 380px;
+    }
+}
+
+/* Hero section de contacto */
 #contacto-hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../imagenes/historia/bg-hero.jpg');
     background-size: cover;
@@ -3577,6 +3648,19 @@ body.artistas #hero {
     letter-spacing: 1px;
 }
 
+/* Clases específicas para título y subtítulo mobile */
+@media (max-width: 768px) {
+    .contacto-title-mobile {
+        font-size: 1.7rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    .contacto-subtitle-mobile {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* Sección del formulario de contacto */
 #contacto-form {
     padding: 80px 40px;
     background-color: #182c6d;
@@ -3625,6 +3709,12 @@ body.artistas #hero {
     outline: none;
     box-sizing: border-box;
     background-color: white;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #eeca4b;
 }
 
 .contact-form input::placeholder,
@@ -3651,10 +3741,11 @@ body.artistas #hero {
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-submit:hover {
     background-color: #ce350c;
     color: #fff;
+    transform: translateY(-2px);
 }
