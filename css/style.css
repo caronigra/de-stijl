@@ -1405,21 +1405,21 @@ footer p {
     footer ul {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 15px 30px;
+        gap: 8px 15px;
         text-align: center;
         justify-content: center;
         max-width: 500px;
     }
 
     footer ul li {
-        flex: 0 0 calc(33.333% - 20px);
-        min-width: 120px;
+        flex: 0 0 calc(33.333% - 10px);
+        min-width: 110px;
     }
 
     footer ul li a {
         font-size: 16px;
         display: block;
-        padding: 8px 16px;
+        padding: 8px 12px;
     }
 }
 
