@@ -1405,7 +1405,7 @@ footer p {
     footer ul {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 8px 15px;
+        gap: 8px;
         text-align: center;
         justify-content: center;
         max-width: 500px;
