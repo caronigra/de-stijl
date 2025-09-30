@@ -904,222 +904,455 @@ nav ul li a.active:hover {
     }
 }
 
-/* principios fundamentales*/
+/* Principios Fundamentales - Rediseño Innovador */
 
 .title-home-h3-pf {
     font-family: 'Orbitron', sans-serif;
     font-size: 35px;
     text-align: center;
-    color: white;
+    color: #0f0d0b;
+    margin-bottom: 50px;
 }
+
+.container-principios-home .title-home-h3-pf {
+    color: #fff;
+}
+
 .container-principios {
-    background-color: #182c6d;
+    background-color: #dfe1e6;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     margin-top: 80px;
-    padding: 40px 0;
+    padding: 60px 0;
 }
-.container-pf{
+
+.container-principios-home {
+    background-color: #182c6d;
+}
+
+.principles-interactive-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
+    gap: 30px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding:20px;
+    padding: 0 40px;
 }
-.principle-item {
+
+.principle-card {
+    position: relative;
+    background-color: white;
+    border: 4px solid #0f0d0b;
+    min-height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.4s ease;
+}
+
+.principle-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 12px 12px 0 rgba(15, 13, 11, 0.3);
+    z-index: 10;
+}
+
+.principle-content {
+    padding: 35px 30px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.image-box {
-    background: white;
-    width: 200px;
-    height: 200px;
-    border: 4px solid #000;
+.principle-number {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #182c6d;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.principle-icon-container {
+    width: 100%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
-.icon {
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-.colores-primarios .icon {
+/* Iconos animados para cada principio */
+.color-bars {
     display: flex;
-    gap: 8px;
-}
-
-.colores-primarios .bar {
-    width: 20px;
+    gap: 12px;
     height: 80px;
-    border-radius: 4px;
 }
 
-.colores-primarios .bar:nth-child(1) {
-    background: #182c6d;
+.color-bars .bar {
+    width: 24px;
+    height: 80px;
+    border: 2px solid #0f0d0b;
+    transition: transform 0.3s ease;
 }
 
-.colores-primarios .bar:nth-child(2) {
-    background: #CE350C;
+.principle-card:hover .bar {
+    animation: barPulse 0.6s ease-in-out;
 }
 
-.colores-primarios .bar:nth-child(3) {
-    background: #eeca4b;
+@keyframes barPulse {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(1.2); }
 }
 
-.formas-geometricas .squares {
+.bar-blue { background-color: #182c6d; }
+.bar-red { background-color: #ce350c; }
+.bar-yellow { background-color: #eeca4b; }
+
+.geometric-shapes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
+    width: 100px;
+}
+
+.shape {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #0f0d0b;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.shape-1 { background-color: #182c6d; }
+.shape-2 { background-color: #ce350c; }
+.shape-3 { background-color: #eeca4b; }
+
+.principle-card:hover .shape {
+    animation: shapeRotate 0.6s ease-in-out;
+}
+
+@keyframes shapeRotate {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+}
+
+.balance-symbol {
+    position: relative;
     width: 80px;
     height: 80px;
 }
 
-.formas-geometricas .square {
-    border-radius: 4px;
+.balance-line {
+    position: absolute;
+    background-color: #0f0d0b;
+    transition: all 0.4s ease;
 }
 
-.formas-geometricas .square:nth-child(1) {
-    background: white;
-    border: 3px solid #666;
+.balance-h {
+    width: 80px;
+    height: 3px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
 
-.formas-geometricas .square:nth-child(2) {
-    background: #182c6d;
+.balance-v {
+    width: 3px;
+    height: 80px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 
-.formas-geometricas .square:nth-child(3) {
-    background: #ce350c;
+.balance-square {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #eeca4b;
+    border: 2px solid #0f0d0b;
+    top: 10px;
+    right: 10px;
+    transition: all 0.4s ease;
 }
 
-.formas-geometricas .square:nth-child(4) {
-    background: white;
-    border: 3px solid #666;
+.principle-card:hover .balance-square {
+    top: 50px;
+    right: 50px;
 }
 
-.equilibrio-matematico .math-icon {
-    background: #ce350c;
-    color: white;
+.universal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     width: 80px;
     height: 80px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: bold;
 }
 
-.expresion-universal .universal-icon {
-    display: flex;
-    gap: 4px;
+.grid-cell {
+    border: 2px solid #0f0d0b;
+    background-color: white;
+    transition: background-color 0.3s ease;
 }
 
-.expresion-universal .rect {
-    border-radius: 2px;
+.grid-active {
+    background-color: #182c6d;
 }
 
-.expresion-universal .rect:nth-child(1) {
-    width: 15px;
-    height: 80px;
-    background: #ccc;
-    border: 2px solid #666;
+.principle-card:hover .grid-cell {
+    animation: gridFlash 1.2s ease-in-out;
 }
 
-.expresion-universal .rect:nth-child(2) {
-    width: 30px;
-    height: 80px;
-    background: #ccc;
-    border: 2px solid #666;
+@keyframes gridFlash {
+    0%, 100% { background-color: white; }
+    25% { background-color: #182c6d; }
+    50% { background-color: #ce350c; }
+    75% { background-color: #eeca4b; }
 }
 
-.expresion-universal .rect:nth-child(3) {
-    width: 25px;
-    height: 60px;
-    background: #eeca4b;
-    margin-top: 20px;
-}
-
-.expresion-universal .rect:nth-child(4) {
-    width: 8px;
-    height: 80px;
-    background: #0f0d0b;
-}
-
-.principle-title {
-    color: white;
-    font-family: 'Montserrat', 'Orbitron', sans-serif;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.1rem;
-    line-height: 1.3;
+.principle-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    color: #0f0d0b;
+    margin: 15px 0 10px 0;
+    line-height: 1.2;
+}
+
+.principle-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #0f0d0b;
+    margin: 0;
+}
+
+/* Acentos de color que aparecen en hover */
+.principle-accent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: height 0.4s ease;
+    z-index: 1;
+    opacity: 0.15;
+}
+
+.principle-card:hover .principle-accent {
+    height: 8px;
+}
+
+.principle-accent-red { background-color: #ce350c; }
+.principle-accent-blue { background-color: #182c6d; }
+.principle-accent-yellow { background-color: #eeca4b; }
+.principle-accent-black { background-color: #0f0d0b; }
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .principles-interactive-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+    }
 }
 
 @media (max-width: 1024px) {
-    .container-pf {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        padding: 15px;
-    }
-
-    .image-box {
-        width: 170px;
-        height: 170px;
-    }
-
     .title-home-h3-pf {
         font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .principles-interactive-grid {
+        gap: 25px;
+        padding: 0 30px;
+    }
+
+    .principle-card {
+        min-height: 320px;
+    }
+
+    .principle-content {
+        padding: 30px 25px;
+    }
+
+    .principle-number {
+        font-size: 42px;
+    }
+
+    .principle-heading {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 768px) {
-    .container-pf {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        padding: 20px;
-    }
-
-    .image-box {
-        width: 160px;
-        height: 160px;
+    .container-principios {
+        padding: 50px 0;
     }
 
     .title-home-h3-pf {
         font-size: 28px;
+        margin-bottom: 35px;
     }
 
-    .principle-title {
-        font-size: 1rem;
+    .principles-interactive-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .principle-card {
+        min-height: 280px;
+    }
+
+    .principle-content {
+        padding: 25px 20px;
+    }
+
+    .principle-number {
+        font-size: 36px;
+    }
+
+    .principle-icon-container {
+        height: 80px;
+        margin: 15px 0;
+    }
+
+    .principle-heading {
+        font-size: 17px;
+    }
+
+    .principle-text {
+        font-size: 13px;
+    }
+
+    .color-bars {
+        gap: 8px;
+        height: 60px;
+    }
+
+    .color-bars .bar {
+        width: 20px;
+        height: 60px;
+    }
+
+    .geometric-shapes {
+        width: 80px;
+    }
+
+    .shape {
+        width: 24px;
+        height: 24px;
+    }
+
+    .balance-symbol {
+        width: 60px;
+        height: 60px;
+    }
+
+    .balance-h {
+        width: 60px;
+    }
+
+    .balance-v {
+        height: 60px;
+    }
+
+    .universal-grid {
+        width: 60px;
+        height: 60px;
     }
 }
 
 @media (max-width: 480px) {
-    .container-pf {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 15px;
+    .container-principios {
+        padding: 40px 0;
     }
 
     .title-home-h3-pf {
         font-size: 24px;
+        margin-bottom: 30px;
     }
 
-    .image-box {
-        width: 180px;
-        height: 180px;
+    .principles-interactive-grid {
+        padding: 0 15px;
+        gap: 15px;
     }
 
-    .principle-title {
-        font-size: 0.9rem;
+    .principle-card {
+        min-height: 260px;
+    }
+
+    .principle-content {
+        padding: 20px 18px;
+    }
+
+    .principle-number {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .principle-icon-container {
+        height: 70px;
+        margin: 12px 0;
+    }
+
+    .principle-heading {
+        font-size: 16px;
+        margin: 12px 0 8px 0;
+    }
+
+    .principle-text {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .color-bars {
+        gap: 6px;
+        height: 50px;
+    }
+
+    .color-bars .bar {
+        width: 18px;
+        height: 50px;
+    }
+
+    .geometric-shapes {
+        width: 70px;
+        gap: 6px;
+    }
+
+    .shape {
+        width: 20px;
+        height: 20px;
+    }
+
+    .balance-symbol {
+        width: 50px;
+        height: 50px;
+    }
+
+    .balance-h {
+        width: 50px;
+        height: 2px;
+    }
+
+    .balance-v {
+        width: 2px;
+        height: 50px;
+    }
+
+    .balance-square {
+        width: 16px;
+        height: 16px;
+    }
+
+    .universal-grid {
+        width: 50px;
+        height: 50px;
+        gap: 8px;
     }
 }
 
@@ -2275,17 +2508,6 @@ body.artistas #hero {
     letter-spacing: 2px;
 }
 
-/* Modificaciones a la sección de principios para filosofía */
-.principles-section .principle-description {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-    margin-top: 15px;
-    padding: 0 10px;
-    font-weight: 400;
-}
 
 /* Sección TEORÍA */
 #teoria-section {
