@@ -24,6 +24,7 @@ $RECYCLE.BIN/
 .idea/
 *.sublime-*
 .atom/
+.claude/
 
 # Log files
 *.log
