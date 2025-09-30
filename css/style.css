@@ -1403,9 +1403,17 @@ footer p {
 /* Responsive Footer */
 @media (max-width: 768px) {
     footer ul {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px 30px;
         text-align: center;
+        justify-content: center;
+        max-width: 500px;
+    }
+
+    footer ul li {
+        flex: 0 0 calc(33.333% - 20px);
+        min-width: 120px;
     }
 
     footer ul li a {
