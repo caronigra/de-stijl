@@ -79,28 +79,28 @@
 
         <!-- Perfiles de Artistas -->
         <section id="perfiles-artistas">
-            <div class="container"> 
+            <div class="container">
                 <?php
 	include('conexion.php');
 
 	$buscar = $_POST['buscar'];
-	echo "Su consulta: <em>".$buscar."</em><br>";
-
 	$consulta = mysqli_query($conexion, "SELECT * FROM artistas WHERE nombre LIKE '%$buscar%' ");
+	$nros=mysqli_num_rows($consulta);
 ?>
 
-	<p>Cantidad de Resultados: 
-	<?php
-		$nros=mysqli_num_rows($consulta);
-		echo $nros;
-	?>
-	</p>
-    
+	<div class="search-results-header <?php echo ($nros > 0) ? 'results-found' : 'no-results-found'; ?>">
+		<p class="search-query">Su consulta: <em><?php echo $buscar; ?></em></p>
+		<p class="search-count">Cantidad de Resultados: <?php echo $nros; ?></p>
+		<?php if($nros == 0) { ?>
+		<p class="no-results-message">No se encontraron resultados para esta búsqueda "<?php echo $buscar; ?>".</p>
+		<?php } ?>
+	</div>
+
 	<?php
 		while($resultados=mysqli_fetch_array($consulta)) {
 	?>
     <p>
-    <?php	
+    <?php
 
 			echo $resultados['bio'] ;
 	?>

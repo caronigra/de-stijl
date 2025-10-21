@@ -3795,3 +3795,94 @@ body.artistas #hero {
     color: #fff;
     transform: translateY(-2px);
 }
+/* Estilos para Resultados de Búsqueda */
+.search-results-header {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-left: 5px solid #ce350c;
+    margin-bottom: 30px;
+}
+
+.search-query {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.search-query em {
+    color: #ce350c;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.search-count {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.search-result-item {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.search-result-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #ce350c;
+}
+
+.search-result-item p {
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+}
+
+.search-divider {
+    border: none;
+    border-top: 2px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.no-results {
+    text-align: center;
+    padding: 60px 30px;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .search-results-header {
+        padding: 20px;
+    }
+
+    .search-query {
+        font-size: 1rem;
+    }
+
+    .search-result-item {
+        padding: 20px;
+    }
+}
+
+/* Colores para resultados de búsqueda */
+.search-results-header.results-found {
+    border-left-color: #182c6d;
+}
+
+.search-results-header.results-found .search-query em {
+    color: #333;
+}
+
+.search-results-header.no-results-found {
+    border-left-color: #ce350c;
+}
+
+.no-results-message {
+    color: #ce350c;
+    font-weight: 500;
+    margin-top: 10px;
+}
