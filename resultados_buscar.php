@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>De Stijl - Contacto</title>
+    <title>De Stijl - Artistas</title>
     <link rel="icon" href="imagenes/logo-icon.svg" type="icon">
     <link href="css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +15,10 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
 </head>
 
-<body>
+<body class="artistas">
     <header>
         <div id="header-left">
             <div id="logo">
@@ -47,10 +48,8 @@
 
         <div id="header-right">
             <div id="search">
-                <form action="resultados_buscar.php" method="POST">
-                    <input type="text" name="buscar" placeholder="Buscar...">
-                    <button type="submit"><span class="material-icons">search</span></button>
-                </form>
+                <input type="text" placeholder="Buscar...">
+                <button><span class="material-icons">search</span></button>
             </div>
         </div>
     </header>
@@ -71,69 +70,62 @@
     <div class="nav-overlay"></div>
     <main>
         <!-- Hero Section -->
-        <section id="contacto-hero">
+        <section id="hero">
             <div class="hero-content">
-                <h1 class="contacto-title-mobile">CONTACTO</h1>
-                <p class="contacto-subtitle-mobile">Conecta con el mundo De Stijl</p>
+                <h1>ARTISTAS</h1>
+                <p>Los creadores del Neoplasticismo</p>
             </div>
         </section>
 
-        <!-- Formulario de Contacto -->
-        <section id="contacto-form">
-            <div class="container">
-                <div class="contacto-content">
-                    <div class="form-container">
-                        <div class="form-column">
-                            <h2>Envíanos un mensaje</h2>
-                            <form action="#" method="POST" class="contact-form">
-                                <div class="form-group">
-                                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-                                </div>
+        <!-- Perfiles de Artistas -->
+        <section id="perfiles-artistas">
+            <div class="container"> 
+                <?php
+	include('conexion.php');
 
-                                <div class="form-group">
-                                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                                </div>
+	$buscar = $_POST['buscar'];
+	echo "Su consulta: <em>".$buscar."</em><br>";
 
-                                <div class="form-group">
-                                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
-                                </div>
+	$consulta = mysqli_query($conexion, "SELECT * FROM artistas WHERE nombre LIKE '%$buscar%' ");
+?>
 
-                                <div class="form-group">
-                                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Mensaje" required></textarea>
-                                </div>
+	<p>Cantidad de Resultados: 
+	<?php
+		$nros=mysqli_num_rows($consulta);
+		echo $nros;
+	?>
+	</p>
+    
+	<?php
+		while($resultados=mysqli_fetch_array($consulta)) {
+	?>
+    <p>
+    <?php	
 
-                                <button type="submit" class="btn-submit">Enviar mensaje</button>
-                            </form>
-                        </div>
-                    </div>
+			echo $resultados['bio'] ;
+	?>
+    </p>
+    <hr/>
+    <?php
+		}
 
-                    <div class="animation-column">
-                        <div class="de-stijl-animation">
-                            <div class="geometric-composition">
-                                <!-- Rectángulos animados -->
-                                <div class="rect rect-red rect-1"></div>
-                                <div class="rect rect-blue rect-2"></div>
-                                <div class="rect rect-yellow rect-3"></div>
-                                <div class="rect rect-white rect-4"></div>
-                                <div class="rect rect-red rect-5"></div>
-                                <div class="rect rect-blue rect-6"></div>
+		mysqli_free_result($consulta);
+		mysqli_close($conexion);
 
-                                <!-- Líneas negras -->
-                                <div class="line line-horizontal line-1"></div>
-                                <div class="line line-horizontal line-2"></div>
-                                <div class="line line-vertical line-3"></div>
-                                <div class="line line-vertical line-4"></div>
-                                <div class="line line-horizontal line-5"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+	?>
+
+
+
             </div>
+                
+                
+                
         </section>
 
+       
+        
 
     </main>
-
     <footer>
         <div id="logo">
             <a href="index.html">

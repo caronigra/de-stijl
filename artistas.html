@@ -48,8 +48,10 @@
 
         <div id="header-right">
             <div id="search">
-                <input type="text" placeholder="Buscar...">
-                <button><span class="material-icons">search</span></button>
+                <form action="resultados_buscar.php" method="POST">
+                    <input type="text" name="buscar" placeholder="Buscar...">
+                    <button type="submit"><span class="material-icons">search</span></button>
+                </form>
             </div>
         </div>
     </header>
