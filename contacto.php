@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>De Stijl - Contacto</title>
     <link rel="icon" href="imagenes/logo-icon.svg" type="icon">
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -88,6 +88,21 @@
                 <div class="contacto-content">
                     <div class="form-container">
                         <h2>Envíanos un mensaje</h2>
+
+                        <?php if(isset($_GET['enviado']) && $_GET['enviado'] == 1): ?>
+                        <div class="mensaje-exito">
+                            <span class="material-icons">check_circle</span>
+                            <p>¡Tu mensaje ha sido enviado exitosamente!</p>
+                        </div>
+                        <?php endif; ?>
+
+                        <?php if(isset($_GET['error']) && $_GET['error'] == 1): ?>
+                        <div class="mensaje-error">
+                            <span class="material-icons">error</span>
+                            <p>Hubo un error al enviar tu mensaje. Intenta nuevamente.</p>
+                        </div>
+                        <?php endif; ?>
+
                         <form action="enviar.php" method="POST" class="contact-form">
                             <div class="form-group">
                                 <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required class="input-red">
