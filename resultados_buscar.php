@@ -71,14 +71,6 @@
     <!-- Mobile Overlay -->
     <div class="nav-overlay"></div>
     <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-content">
-                <h1>ARTISTAS</h1>
-                <p>Los creadores del Neoplasticismo</p>
-            </div>
-        </section>
-
         <!-- Perfiles de Artistas -->
         <section id="perfiles-artistas">
             <div class="container">
