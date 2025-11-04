@@ -320,7 +320,9 @@ nav ul li a.active:hover {
 }
 
 .modal-content {
-  background-color: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../imagenes/historia/bg-hero.jpg');
+  background-size: cover;
+  background-position: center;
   border: 5px solid #0f0d0b;
   width: 90%;
   max-width: 500px;
@@ -340,21 +342,48 @@ nav ul li a.active:hover {
   }
 }
 
-.close {
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  color: #0f0d0b;
-  font-size: 32px;
-  font-weight: bold;
-  cursor: pointer;
-  line-height: 1;
-  z-index: 10;
-  transition: color 0.3s ease;
+.modal-header {
+  display: flex;
+  flex-direction: column;
 }
 
-.close:hover {
-  color: #ce350c;
+.form-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.form-buttons .btn-submit,
+.form-buttons .btn-secondary {
+  flex: 1;
+  padding: 15px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border: 3px solid #0f0d0b !important;
+  margin: 0 !important;
+  height: auto !important;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #0f0d0b;
+  border: 3px solid #0f0d0b;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.btn-secondary:hover {
+  background-color: #0f0d0b;
+  color: #fff;
 }
 
 .modal-tabs {
@@ -365,23 +394,14 @@ nav ul li a.active:hover {
 .tab-btn {
   flex: 1;
   background-color: #fff;
+  color: #0f0d0b;
   border: none;
-  border-right: 3px solid #0f0d0b;
   padding: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  color: #0f0d0b;
-}
-
-.tab-btn:last-child {
-  border-right: none;
-}
-
-.tab-btn:hover {
-  background-color: #eeca4b;
+  transition: none;
 }
 
 .tab-btn.active {
@@ -408,6 +428,17 @@ nav ul li a.active:hover {
 }
 
 .form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.form-row .form-group {
+  flex: 1;
   margin-bottom: 20px;
 }
 
@@ -478,8 +509,6 @@ nav ul li a.active:hover {
 
 .btn-submit:hover {
   background-color: #ce350c;
-  transform: translateY(-2px);
-  box-shadow: 4px 4px 0px rgba(15, 13, 11, 0.3);
 }
 
 /* Contenedor principal */
@@ -4096,6 +4125,35 @@ body.contacto-page main {
         font-size: 1.1rem;
     }
 }
+
+/* Estilos para Panel de Usuario */
+.user-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px solid #0f0d0b;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+.user-info h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #182c6d;
+    text-transform: uppercase;
+}
+
+.user-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.user-info strong {
+    color: #ce350c;
+    font-weight: 600;
+}
+
 /* Estilos para Resultados de Búsqueda */
 .search-results-header {
     background-color: #f5f5f5;
