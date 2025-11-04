@@ -2,15 +2,35 @@
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('auth-modal');
     const loginBtn = document.getElementById('login-btn');
+    const loginBtnMobile = document.getElementById('login-btn-mobile');
     const closeBtn = document.querySelector('.close');
     const tabBtns = document.querySelectorAll('.tab-btn');
 
-    // Abrir modal al hacer clic en el botón de login
+    // Función para abrir el modal
+    function openModal() {
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevenir scroll del body
+
+        // Cerrar menú mobile si está abierto
+        const navMobile = document.querySelector('.nav-mobile');
+        const navOverlay = document.querySelector('.nav-overlay');
+        const hamburger = document.querySelector('.hamburger');
+
+        if (navMobile && navMobile.classList.contains('active')) {
+            navMobile.classList.remove('active');
+            navOverlay.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    }
+
+    // Abrir modal al hacer clic en el botón de login desktop
     if (loginBtn) {
-        loginBtn.addEventListener('click', function() {
-            modal.classList.add('show');
-            document.body.style.overflow = 'hidden'; // Prevenir scroll del body
-        });
+        loginBtn.addEventListener('click', openModal);
+    }
+
+    // Abrir modal al hacer clic en el botón de login mobile
+    if (loginBtnMobile) {
+        loginBtnMobile.addEventListener('click', openModal);
     }
 
     // Cerrar modal al hacer clic en la X
