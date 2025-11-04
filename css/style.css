@@ -4304,3 +4304,275 @@ body.contacto-page main {
         font-size: 20px;
     }
 }
+
+/* ============================================
+   LOGIN PAGE STYLES
+   ============================================ */
+
+/* Tabs para Login Page */
+.login-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 30px;
+    border: 3px solid #0f0d0b;
+    overflow: hidden;
+}
+
+.login-tabs .tab-btn {
+    flex: 1;
+    padding: 15px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0f0d0b;
+    background-color: #fff;
+    border: none;
+    border-right: 3px solid #0f0d0b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.login-tabs .tab-btn:last-child {
+    border-right: none;
+}
+
+.login-tabs .tab-btn:hover {
+    background-color: #eeca4b;
+    color: #0f0d0b;
+}
+
+.login-tabs .tab-btn.active {
+    background-color: #182c6d;
+    color: #fff;
+}
+
+/* Tab Content */
+.tab-content-page {
+    display: none;
+}
+
+.tab-content-page.active {
+    display: block;
+}
+
+.tab-content-page h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin-bottom: 25px;
+}
+
+/* Checkbox personalizado */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #0f0d0b;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #182c6d;
+}
+
+.checkbox-label span {
+    user-select: none;
+}
+
+/* Logout Button Styles */
+.logout-btn,
+.logout-btn-mobile {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #ce350c;
+    color: #fff;
+    border: 2px solid #0f0d0b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logout-btn:hover,
+.logout-btn-mobile:hover {
+    background-color: #a82a0a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn .material-icons,
+.logout-btn-mobile .material-icons {
+    font-size: 20px;
+}
+
+/* Alert Messages */
+.alert {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 3px solid #0f0d0b;
+    background-color: #fff;
+    align-items: center;
+}
+
+.alert-success {
+    background-color: #e8f5e9;
+    border-left: 8px solid #182c6d;
+}
+
+.alert-error {
+    background-color: #ffebee;
+    border-left: 8px solid #ce350c;
+}
+
+.alert-icon {
+    flex-shrink: 0;
+}
+
+.alert-icon .material-symbols-outlined {
+    font-size: 48px;
+}
+
+.alert-success .alert-icon .material-symbols-outlined {
+    color: #182c6d;
+}
+
+.alert-error .alert-icon .material-symbols-outlined {
+    color: #ce350c;
+}
+
+.alert-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f0d0b;
+    margin: 0 0 10px 0;
+}
+
+.alert-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #0f0d0b;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Success Actions */
+.success-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-secondary-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #0f0d0b;
+    border: 3px solid #0f0d0b;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-secondary-link:hover {
+    background-color: #eeca4b;
+    color: #0f0d0b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary-link .arrow-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.btn-secondary-link:hover .arrow-icon {
+    transform: translateX(5px);
+}
+
+.info-card.card-yellow {
+    background-color: #eeca4b;
+}
+
+.info-card.card-yellow h3,
+.info-card.card-yellow p {
+    color: #0f0d0b;
+}
+
+/* Responsive para Login Page */
+@media (max-width: 768px) {
+    .login-tabs .tab-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .tab-content-page h2 {
+        font-size: 20px;
+    }
+
+    .logout-btn,
+    .logout-btn-mobile {
+        padding: 8px 16px;
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    .logout-btn .material-icons,
+    .logout-btn-mobile .material-icons {
+        font-size: 18px;
+    }
+
+    .alert {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .alert-icon .material-symbols-outlined {
+        font-size: 40px;
+    }
+
+    .alert-content h2 {
+        font-size: 18px;
+    }
+
+    .alert-content p {
+        font-size: 14px;
+    }
+
+    .btn-secondary-link {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
