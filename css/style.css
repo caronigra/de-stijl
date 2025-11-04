@@ -703,9 +703,11 @@ nav ul li a.active:hover {
         display: block !important;
     }
 
-    /* Adjust header for mobile */
+    /* Ajustar header-left para mobile - logo y hamburger en extremos */
     #header-left {
-        gap: 30px;
+        justify-content: space-between;
+        flex: 1;
+        gap: 0;
     }
 
     /* Achicar logo en mobile */
