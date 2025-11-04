@@ -241,6 +241,7 @@ nav ul li a.active:hover {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  height: 40px;
 }
 
 #search button .material-icons {
